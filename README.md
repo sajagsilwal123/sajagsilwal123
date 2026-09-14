@@ -2,168 +2,140 @@
 
 # Sajag Silwal
 
-### Computer Engineer · Finance · Technology · Markets
+`engineer` · `builder` · `finance student`
 
-Computer engineer from Nepal, currently pursuing my **Master's in Finance** at  
-**Peking University HSBC Business School (PHBS)** in Shenzhen, China.
+**Building systems. Studying markets.  
+Exploring what happens when the two meet.**
 
-[Website](https://sajagsilwal.com) · [Writing](https://blogs.sajagsilwal.com) · [GitHub](https://github.com/sajagsilwal123) · [Email](mailto:contact@sourceofcivil.com)
+Shenzhen, China
+
+[Website ↗](https://sajagsilwal.com) &nbsp;&nbsp; [Writing ↗](https://sajagsilwal.com/writing) &nbsp;&nbsp; [GitHub ↗](https://github.com/sajagsilwal123) &nbsp;&nbsp; [Email ↗](mailto:contact@sajagsilwal.com)
 
 </div>
 
----
+<br>
 
-## About
+> currently → Master's in Finance @ **Peking University HSBC Business School (PHBS)**
 
-My background is in **software engineering, backend systems, product development, and building technology around real operational problems**.
+<br>
 
-Over the years, I've worked across APIs, databases, internal platforms, business software, logistics technology, automation, and product development.
+I'm a computer engineer from Nepal — I started out building backend systems, products and software around real operational problems.
 
-I'm now increasingly interested in the intersection of **engineering, finance, markets, and quantitative thinking** — particularly how computation and data can help us better understand financial systems and decision-making.
-
----
-
-## Currently
-
-I'm studying finance at **Peking University HSBC Business School (PHBS)** in Shenzhen.
-
-My current areas of exploration include:
-
-`Quantitative Finance` · `Financial Markets` · `Econometrics` · `Risk` · `FinTech` · `Market Microstructure` · `Investment Research`
-
-Alongside finance, I continue to build software and experiment with ideas around automation, data, AI, and operational systems.
+I'm now pursuing a Master's in Finance at Peking University HSBC Business School in Shenzhen, while exploring markets, quantitative finance and the places where computation meets finance.
 
 ---
 
-## Building
-
-Most of my engineering work has revolved around turning operational problems into software.
+## 01 / Building
 
 ### BasukiMS
 
-A fleet resource planning and internal business management platform built around the operational requirements of a logistics business.
+Fleet resource planning and operational software for a logistics business.
 
-It brings together areas such as:
+`fleet` `operations` `accounting` `inventory` `analytics`
 
-`Fleet Operations` · `Trips` · `Accounting` · `Inventory` · `Compliance` · `Analytics` · `Automation`
+### Aroma & Nexus
 
-### Aroma
+Connected product and operations work under Iruka Technologies, covering e-commerce, inventory, vendor operations, fulfilment, warehouse workflows, dispatch, tracking, replenishment, and automation.
 
-An e-commerce and operational platform designed around product discovery, inventory management, vendor operations, fulfilment, and commerce infrastructure.
+`e-commerce` `operations` `inventory` `fulfilment` `automation`
 
-### Nexus
+### Dhewa
 
-An exploration into warehouse and order automation — connecting vendor dispatch, tracking, inventory, replenishment, and operational workflows.
+An end-to-end experiment in pushing the limits of AI in software engineering, exploring how much of the software lifecycle can be designed, built, tested, refined, and automated with AI as an active engineering collaborator.
+
+`ai` `software engineering` `experimentation` `automation` `developer tooling`
+
+<br>
+
+## 02 / Exploring
+
+`quant finance` · `markets` · `econometrics` · `risk`
+
+`fintech` · `market microstructure` · `investment research` · `data`
+
+<br>
+
+### Exploring the potential of AI in software engineering
+
+Active experimentation around how AI can improve software development, engineering workflows, automation, code assistance, system design, debugging, and developer productivity.
+
+`developer productivity` · `code assistance` · `workflows` · `system design` · `debugging`
+
+<br>
+
+## 03 / Toolkit
+
+**Build**
+
+`TypeScript` `Node.js` `Next.js` `PostgreSQL` `Redis`
+
+**Ship**
+
+`Docker` `Nginx` `Linux` `GitHub`
+
+**Also**
+
+`Java` `Python` `MongoDB`
 
 ---
 
-## Exploring
+## 04 / GitHub
 
-I'm particularly interested in problems that sit somewhere between **technology and finance**.
-
-Some of the areas I'm currently spending time on:
-
-- Quantitative finance
-- Financial markets
-- Econometrics
-- Market microstructure
-- Risk and financial institutions
-- Financial technology
-- Investment research
-- Data-driven decision making
-- AI and automation
-
-I'm especially interested in understanding how **engineering approaches, mathematical thinking, and computation** can be applied to markets and financial systems.
-
----
-
-## Technology
-
-```text
-Languages       TypeScript · JavaScript · Java · Python
-Backend         Node.js · Express
-Frontend        Next.js · React
-Databases       PostgreSQL · MongoDB · Redis
-Infrastructure  Docker · Nginx · Linux
-Tools           Git · GitHub
-```
-
-I care more about **understanding the problem and choosing the right tools** than collecting frameworks.
-
----
-
-## GitHub
+### things I've been building lately.
 
 <div align="center">
 
-<a href="https://github.com/sajagsilwal123">
-  <img
-    height="180"
-    src="https://github-stats-extended.vercel.app/api?username=sajagsilwal123&show_icons=true&hide_border=true&include_all_commits=true&count_private=true"
-    alt="Sajag Silwal's GitHub statistics"
-  />
-</a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=sajagsilwal123&theme=github_dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=sajagsilwal123&theme=github" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=sajagsilwal123&theme=github_dark" alt="Sajag Silwal's GitHub statistics" />
+</picture>
+&nbsp;
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sajagsilwal123&theme=github_dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sajagsilwal123&theme=github" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sajagsilwal123&theme=github_dark" alt="Most used languages" />
+</picture>
 
-<a href="https://github.com/sajagsilwal123">
-  <img
-    height="180"
-    src="https://github-stats-extended.vercel.app/api/top-langs/?username=sajagsilwal123&layout=compact&hide_border=true&langs_count=8"
-    alt="Most used languages"
-  />
-</a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sajagsilwal123&theme=github_dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sajagsilwal123&theme=github" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sajagsilwal123&theme=github_dark" alt="Contribution activity" />
+</picture>
 
-<br />
-
-<a href="https://github.com/sajagsilwal123">
-  <img
-    src="https://streak-stats.demolab.com?user=sajagsilwal123&hide_border=true"
-    alt="GitHub contribution streak"
-  />
-</a>
+<sub>Languages reflect repository composition, not proficiency.</sub>
 
 </div>
 
-> GitHub language statistics reflect the code in public repositories and aren't intended to represent overall proficiency.
+<br>
 
----
+## 05 / Writing
 
-## Beyond Code
+Ideas worth thinking through.
 
-A significant part of my journey has also involved **teaching, mentoring, entrepreneurship, and building products from the ground up**.
+Notes on finance, technology, markets, engineering — and whatever else I find worth writing about.
 
-I've always been interested in more than just writing code — particularly how technology interacts with businesses, people, markets, and real-world systems.
+[Read my notes ↗](https://sajagsilwal.com/writing)
 
-That curiosity is also what eventually led me toward finance.
+<br>
 
----
+## 06 / Elsewhere
 
-## Writing
+[Website ↗](https://sajagsilwal.com)  
+[Writing ↗](https://sajagsilwal.com/writing)  
+[GitHub ↗](https://github.com/sajagsilwal123)  
+[Email ↗](mailto:contact@sajagsilwal.com)
 
-I write about **finance, technology, markets, engineering, and whatever else I find worth thinking through**.
+<br>
 
-→ **[Read my notes](https://blogs.sajagsilwal.com)**
+**say hello → [contact@sajagsilwal.com](mailto:contact@sajagsilwal.com)**
 
----
-
-## Elsewhere
-
-- **Website** — [sajagsilwal.com](https://sajagsilwal.com)
-- **Writing** — [blogs.sajagsilwal.com](https://blogs.sajagsilwal.com)
-- **GitHub** — [github.com/sajagsilwal123](https://github.com/sajagsilwal123)
-- **Email** — [contact@sourceofcivil.com](mailto:contact@sourceofcivil.com)
-
----
-
-## Contact
-
-If you'd like to talk about **technology, finance, markets, research, products, or an interesting problem**, feel free to reach out.
-
-**[contact@sourceofcivil.com](mailto:contact@sourceofcivil.com)**
-
-<br />
+<br>
 
 <div align="center">
 
-<sub>Building systems. Studying markets. Trying to understand both a little better.</sub>
+<sub>
+building systems · studying markets · figuring out what connects them
+</sub>
 
 </div>
