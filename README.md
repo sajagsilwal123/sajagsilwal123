@@ -33,17 +33,17 @@ Fleet resource planning and operational software for a logistics business.
 
 `fleet` `operations` `accounting` `inventory` `analytics`
 
-### Aroma & Nexus
-
-Connected product and operations work under Iruka Technologies, covering e-commerce, inventory, vendor operations, fulfilment, warehouse workflows, dispatch, tracking, replenishment, and automation.
-
-`e-commerce` `operations` `inventory` `fulfilment` `automation`
-
 ### Dhewa
 
 An end-to-end experiment in pushing the limits of AI in software engineering, exploring how much of the software lifecycle can be designed, built, tested, refined, and automated with AI as an active engineering collaborator.
 
 `ai` `software engineering` `experimentation` `automation` `developer tooling`
+
+### Aroma & Nexus
+
+Connected product and operations work under Iruka Technologies, covering e-commerce, inventory, vendor operations, fulfilment, warehouse workflows, dispatch, tracking, replenishment, and automation.
+
+`e-commerce` `operations` `inventory` `fulfilment` `automation`
 
 <br>
 
@@ -85,23 +85,18 @@ Active experimentation around how AI can improve software development, engineeri
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=sajagsilwal123&theme=github_dark" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=sajagsilwal123&theme=github" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=sajagsilwal123&theme=github_dark" alt="Sajag Silwal's GitHub statistics" />
-</picture>
-&nbsp;
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sajagsilwal123&theme=github_dark" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sajagsilwal123&theme=github" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sajagsilwal123&theme=github_dark" alt="Most used languages" />
-</picture>
+<img src="assets/metrics-row.svg" alt="GitHub Metrics" />
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sajagsilwal123&theme=github_dark" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sajagsilwal123&theme=github" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sajagsilwal123&theme=github_dark" alt="Contribution activity" />
-</picture>
+<br>
+
+<img src="assets/stats-card.svg" alt="GitHub Stats" />
+&nbsp;
+<img src="assets/languages-card.svg" alt="Most used languages" />
+
+<br>
+<br>
+
+<img src="assets/heatmap.svg" alt="Contribution Activity Heatmap" />
 
 <sub>Languages reflect repository composition, not proficiency.</sub>
 
