@@ -6,23 +6,23 @@
   </style>
   
   <g transform="translate(10, 40)">
-    <text x="0" y="0" class="val">3.3K+</text>
+    <text x="0" y="0" class="val">1.4K+</text>
     <text x="0" y="24" class="label">contributions</text>
   </g>
   
   <g transform="translate(200, 40)">
-    <text x="0" y="0" class="val">218</text>
+    <text x="0" y="0" class="val">176</text>
     <text x="0" y="24" class="label">active days</text>
   </g>
   
   <g transform="translate(380, 40)">
-    <text x="0" y="0" class="val">14d</text>
+    <text x="0" y="0" class="val">13d</text>
     <text x="0" y="24" class="label">longest streak</text>
   </g>
   
   <g transform="translate(560, 40)">
-    <text x="0" y="0" class="val">20</text>
+    <text x="0" y="0" class="val">15</text>
     <text x="0" y="24" class="label">repositories</text>
-    <text x="0" y="44" class="sub">8 public · 12 private</text>
+    <text x="0" y="44" class="sub">15 public · 0 private</text>
   </g>
 </svg>
