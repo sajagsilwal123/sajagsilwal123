@@ -74,7 +74,7 @@ Active experimentation around how AI can improve software development, engineeri
   </tr>
   <tr>
     <td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/nextjs.svg" /><img src="assets/icons/nextjs-light.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" /></picture>&nbsp;&nbsp;Next.js</td>
-    <td width="50%"><img src="assets/icons/postgresql.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;PostgreSQL</td>
+    <td width="50%"><img src="https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white" alt="PostgreSQL" height="24" /></td>
   </tr>
   <tr>
     <td width="50%"><img src="assets/icons/redis.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;Redis</td>
@@ -86,7 +86,7 @@ Active experimentation around how AI can improve software development, engineeri
 
 <table width="100%">
   <tr>
-    <td width="50%"><img src="assets/icons/docker.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;Docker</td>
+    <td width="50%"><img src="https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white" alt="Docker" height="24" /></td>
     <td width="50%"><img src="assets/icons/nginx.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;Nginx</td>
   </tr>
   <tr>
@@ -99,7 +99,7 @@ Active experimentation around how AI can improve software development, engineeri
 
 <table width="100%">
   <tr>
-    <td width="50%"><img src="assets/icons/digitalocean.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;DigitalOcean</td>
+    <td width="50%"><img src="https://img.shields.io/badge/-DigitalOcean-0080FF?style=flat&logo=digitalocean&logoColor=white" alt="DigitalOcean" height="24" /></td>
     <td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/vercel.svg" /><img src="assets/icons/vercel-light.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" /></picture>&nbsp;&nbsp;Vercel</td>
   </tr>
   <tr>
@@ -116,7 +116,7 @@ Active experimentation around how AI can improve software development, engineeri
     <td width="50%"><img src="assets/icons/python.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;Python</td>
   </tr>
   <tr>
-    <td width="50%"><img src="assets/icons/mongodb.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;MongoDB</td>
+    <td width="50%"><img src="https://img.shields.io/badge/-MongoDB-47A248?style=flat&logo=mongodb&logoColor=white" alt="MongoDB" height="24" /></td>
     <td width="50%">&nbsp;</td>
   </tr>
 </table>
@@ -125,7 +125,7 @@ Active experimentation around how AI can improve software development, engineeri
 
 <table width="100%">
   <tr>
-    <td width="50%"><img src="assets/icons/chatgpt.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;ChatGPT</td>
+    <td width="50%"><img src="https://img.shields.io/badge/-ChatGPT-412991?style=flat&logo=openai&logoColor=white" alt="ChatGPT" height="24" /></td>
     <td width="50%"><img src="assets/icons/claude.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;Claude</td>
   </tr>
   <tr>
