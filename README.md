@@ -65,61 +65,42 @@ Active experimentation around how AI can improve software development, engineeri
 
 ## 03 / Toolkit
 
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
-
 ### Build
 
 <p align="left">
-  <nobr><img src="assets/icons/typescript.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;TypeScript</nobr><br>
-  <nobr><img src="assets/icons/nodejs.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Node.js</nobr><br>
-  <nobr><img src="assets/icons/nextjs.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Next.js</nobr><br>
-  <nobr><img src="assets/icons/postgresql.svg" alt="" width="29" height="29" valign="middle" />&nbsp;&nbsp;PostgreSQL</nobr><br>
+  <nobr><img src="assets/icons/typescript.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;TypeScript</nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <nobr><img src="assets/icons/nodejs.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Node.js</nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <nobr><img src="assets/icons/nextjs.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Next.js</nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <nobr><img src="assets/icons/postgresql.svg" alt="" width="29" height="29" valign="middle" />&nbsp;&nbsp;PostgreSQL</nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <nobr><img src="assets/icons/redis.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Redis</nobr>
 </p>
-
-</td>
-<td width="50%" valign="top">
 
 ### Ship
 
 <p align="left">
-  <nobr><img src="assets/icons/docker.svg" alt="" width="29" height="29" valign="middle" />&nbsp;&nbsp;Docker</nobr><br>
-  <nobr><img src="assets/icons/nginx.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Nginx</nobr><br>
-  <nobr><img src="assets/icons/linux.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Linux</nobr><br>
+  <nobr><img src="assets/icons/docker.svg" alt="" width="29" height="29" valign="middle" />&nbsp;&nbsp;Docker</nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <nobr><img src="assets/icons/nginx.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Nginx</nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <nobr><img src="assets/icons/linux.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Linux</nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <nobr><img src="assets/icons/github.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;GitHub</nobr>
 </p>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
 
 ### Also
 
 <p align="left">
-  <nobr><img src="assets/icons/java.svg" alt="" width="29" height="29" valign="middle" />&nbsp;&nbsp;Java</nobr><br>
-  <nobr><img src="assets/icons/python.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Python</nobr><br>
+  <nobr><img src="assets/icons/java.svg" alt="" width="29" height="29" valign="middle" />&nbsp;&nbsp;Java</nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <nobr><img src="assets/icons/python.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Python</nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <nobr><img src="assets/icons/mongodb.svg" alt="" width="29" height="29" valign="middle" />&nbsp;&nbsp;MongoDB</nobr>
 </p>
-
-</td>
-<td width="50%" valign="top">
 
 ### AI
 
 <p align="left">
-  <nobr><img src="assets/icons/chatgpt.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;ChatGPT</nobr><br>
-  <nobr><img src="assets/icons/claude.svg" alt="" width="29" height="29" valign="middle" />&nbsp;&nbsp;Claude</nobr><br>
-  <nobr><img src="assets/icons/gemini.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Gemini</nobr><br>
-  <nobr><img src="assets/icons/kimi.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Kimi</nobr><br>
+  <nobr><img src="assets/icons/chatgpt.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;ChatGPT</nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <nobr><img src="assets/icons/claude.svg" alt="" width="29" height="29" valign="middle" />&nbsp;&nbsp;Claude</nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <nobr><img src="assets/icons/gemini.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Gemini</nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <nobr><img src="assets/icons/kimi.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Kimi</nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <nobr><img src="assets/icons/qwen.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Qwen</nobr>
 </p>
-
-</td>
-</tr>
-</table>
 
 ---
 

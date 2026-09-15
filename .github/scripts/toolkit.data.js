@@ -45,44 +45,25 @@ const toolkitData = {
 
 /**
  * Generates the GitHub Markdown representation for README.md
- * Two-column category layout: Build & Ship side by side, Also & AI side by side below.
- * Uses <nobr> and <br> per item to prevent detached icon/text wrapping in mobile views.
+ * Spacious borderless category layout: Build, Ship, Also, AI.
+ * Each item is wrapped in <nobr> to prevent detached icon/text wrapping in mobile views.
+ * Items flow across the row with generous non-breaking spaces on PC.
  */
 function renderMarkdown(data = toolkitData) {
   const sections = [];
   sections.push("## 03 / Toolkit\n");
 
-  const renderGroupCell = (group) => {
-    const lines = [];
-    lines.push(`### ${group.heading}\n`);
-    lines.push('<p align="left">');
-    const itemLines = group.items.map((item) => {
+  const groups = [data.build, data.ship, data.also, data.ai];
+  for (const group of groups) {
+    sections.push(`### ${group.heading}\n`);
+    sections.push('<p align="left">');
+    const itemStrings = group.items.map((item) => {
       const size = item.size || 28;
       return `  <nobr><img src="assets/icons/${item.icon}.svg" alt="" width="${size}" height="${size}" valign="middle" />&nbsp;&nbsp;${item.name}</nobr>`;
     });
-    lines.push(itemLines.join("<br>\n"));
-    lines.push("</p>");
-    return lines.join("\n");
-  };
-
-  sections.push('<table width="100%">');
-  sections.push('<tr>');
-  sections.push('<td width="50%" valign="top">\n');
-  sections.push(renderGroupCell(data.build));
-  sections.push('\n</td>');
-  sections.push('<td width="50%" valign="top">\n');
-  sections.push(renderGroupCell(data.ship));
-  sections.push('\n</td>');
-  sections.push('</tr>');
-  sections.push('<tr>');
-  sections.push('<td width="50%" valign="top">\n');
-  sections.push(renderGroupCell(data.also));
-  sections.push('\n</td>');
-  sections.push('<td width="50%" valign="top">\n');
-  sections.push(renderGroupCell(data.ai));
-  sections.push('\n</td>');
-  sections.push('</tr>');
-  sections.push('</table>\n');
+    sections.push(itemStrings.join("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n"));
+    sections.push("</p>\n");
+  }
 
   return sections.join("\n").trim();
 }
@@ -92,7 +73,7 @@ function renderMarkdown(data = toolkitData) {
  */
 function renderHtml(data = toolkitData) {
   const sections = [];
-  sections.push('<div class="toolkit-grid">');
+  sections.push('<div class="toolkit-container">');
 
   for (const groupKey of ["build", "ship", "also", "ai"]) {
     const group = data[groupKey];

@@ -85,11 +85,10 @@ hr {
 }
 
 /* Toolkit Section Styles */
-.toolkit-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 52px;
-  row-gap: 36px;
+.toolkit-container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
 .toolkit-group {
@@ -100,15 +99,15 @@ hr {
   font-size: 18px;
   font-weight: 600;
   color: var(--text-primary);
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   letter-spacing: -0.01em;
 }
 
 .toolkit-list {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 28px;
 }
 
 .toolkit-item {
@@ -173,26 +172,23 @@ hr {
 
 /* Responsive adjustment */
 @media (max-width: 768px) {
-  .toolkit-grid {
-    grid-template-columns: 1fr;
-    row-gap: 28px;
+  .toolkit-container {
+    gap: 24px;
   }
   .toolkit-heading {
     margin-bottom: 12px;
   }
   .toolkit-list {
-    gap: 14px 24px;
+    gap: 12px 20px;
   }
 }
 
 @media (max-width: 480px) {
-  .toolkit-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 20px;
-    row-gap: 24px;
+  .toolkit-container {
+    gap: 20px;
   }
   .toolkit-list {
-    gap: 10px;
+    gap: 10px 16px;
   }
   .toolkit-item {
     font-size: 14px;
@@ -286,7 +282,7 @@ hr {
 
 <h2>03 / Toolkit</h2>
 
-<div class="toolkit-grid">
+<div class="toolkit-container">
   <div class="toolkit-group">
     <div class="toolkit-heading">Build</div>
     <div class="toolkit-list">
