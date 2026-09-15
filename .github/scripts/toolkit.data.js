@@ -52,67 +52,46 @@ const toolkitData = {
 };
 
 /**
- * Helper to render a 2-column compact category table for GitHub Markdown
- */
-function renderCategoryTable(group, align = "left", width = "48%") {
-  const rows = [];
-  rows.push(`<table align="${align}" width="${width}">`);
-  rows.push(`  <thead>\n    <tr>\n      <th colspan="2" align="left">${group.heading}</th>\n    </tr>\n  </thead>`);
-  rows.push('  <tbody>');
-
-  for (let i = 0; i < group.items.length; i += 2) {
-    const left = group.items[i];
-    const right = group.items[i + 1];
-
-    const leftCell = `<td width="50%" nowrap><img src="assets/icons/${left.icon}.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;${left.name}</td>`;
-    const rightCell = right
-      ? `<td width="50%" nowrap><img src="assets/icons/${right.icon}.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;${right.name}</td>`
-      : '<td width="50%">&nbsp;</td>';
-
-    rows.push('    <tr>');
-    rows.push(`      ${leftCell}\n      ${rightCell}`);
-    rows.push('    </tr>');
-  }
-
-  rows.push('  </tbody>');
-  rows.push('</table>');
-  return rows.join('\n');
-}
-
-/**
  * Generates the GitHub Markdown representation for README.md
- * Desktop: Build & Ship side-by-side, Deployment & Cloud & Also side-by-side, AI full width.
- * Mobile: Naturally flows vertically in single column without card compression.
+ * Uses clean, robust 2-column tables per category with optical icon sizing.
+ * Ensures predictable, stable rendering on both desktop and mobile GitHub.
  */
 function renderMarkdown(data = toolkitData) {
   const sections = [];
   sections.push("## 03 / Toolkit\n");
 
-  // Row 1: Build & Ship
-  sections.push(renderCategoryTable(data.build, "left", "48%"));
-  sections.push(renderCategoryTable(data.ship, "right", "48%"));
-  sections.push('<br clear="all" />\n');
+  const groups = [data.build, data.ship, data.deploy, data.also, data.ai];
+  for (const group of groups) {
+    sections.push(`<p><strong>${group.heading}</strong></p>\n`);
+    sections.push('<table width="100%">');
 
-  // Row 2: Deployment & Cloud & Also
-  sections.push(renderCategoryTable(data.deploy, "left", "48%"));
-  sections.push(renderCategoryTable(data.also, "right", "48%"));
-  sections.push('<br clear="all" />\n');
+    for (let i = 0; i < group.items.length; i += 2) {
+      const left = group.items[i];
+      const right = group.items[i + 1];
 
-  // Row 3: AI (5 items in 1 row)
-  sections.push('<table width="100%">');
-  sections.push('  <thead>\n    <tr>\n      <th colspan="5" align="left">AI</th>\n    </tr>\n  </thead>');
-  sections.push('  <tbody>\n    <tr>');
-  for (const item of data.ai.items) {
-    sections.push(`      <td width="20%" nowrap><img src="assets/icons/${item.icon}.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;${item.name}</td>`);
+      const leftSize = left.size || 24;
+      const leftCell = `<td width="50%"><img src="assets/icons/${left.icon}.svg" alt="" width="${leftSize}" height="${leftSize}" align="absmiddle" />&nbsp;&nbsp;${left.name}</td>`;
+
+      let rightCell = '<td width="50%">&nbsp;</td>';
+      if (right) {
+        const rightSize = right.size || 24;
+        rightCell = `<td width="50%"><img src="assets/icons/${right.icon}.svg" alt="" width="${rightSize}" height="${rightSize}" align="absmiddle" />&nbsp;&nbsp;${right.name}</td>`;
+      }
+
+      sections.push("  <tr>");
+      sections.push(`    ${leftCell}\n    ${rightCell}`);
+      sections.push("  </tr>");
+    }
+
+    sections.push("</table>\n");
   }
-  sections.push('    </tr>\n  </tbody>\n</table>\n');
 
   return sections.join("\n").trim();
 }
 
 /**
  * Generates the semantic HTML representation for preview / web interfaces
- * Matches the reference mockup styling and layout.
+ * Uses the responsive 2-column CSS Grid layout for desktop, explicitly collapsing on mobile.
  */
 function renderHtml(data = toolkitData) {
   const sections = [];
