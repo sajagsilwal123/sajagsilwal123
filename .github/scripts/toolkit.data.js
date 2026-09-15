@@ -7,38 +7,38 @@ const toolkitData = {
   build: {
     heading: "Build",
     items: [
-      { name: "TypeScript", icon: "typescript", size: 24 },
-      { name: "Node.js", icon: "nodejs", size: 24 },
-      { name: "Next.js", icon: "nextjs", size: 24 },
-      { name: "PostgreSQL", icon: "postgresql", size: 25 },
-      { name: "Redis", icon: "redis", size: 24 }
+      { name: "TypeScript", icon: "typescript", size: 28 },
+      { name: "Node.js", icon: "nodejs", size: 28 },
+      { name: "Next.js", icon: "nextjs", size: 28 },
+      { name: "PostgreSQL", icon: "postgresql", size: 29 },
+      { name: "Redis", icon: "redis", size: 28 }
     ]
   },
   ship: {
     heading: "Ship",
     items: [
-      { name: "Docker", icon: "docker", size: 25 },
-      { name: "Nginx", icon: "nginx", size: 24 },
-      { name: "Linux", icon: "linux", size: 25 },
-      { name: "GitHub", icon: "github", size: 24 }
+      { name: "Docker", icon: "docker", size: 29 },
+      { name: "Nginx", icon: "nginx", size: 28 },
+      { name: "Linux", icon: "linux", size: 28 },
+      { name: "GitHub", icon: "github", size: 28 }
     ]
   },
   also: {
     heading: "Also",
     items: [
-      { name: "Java", icon: "java", size: 26 },
-      { name: "Python", icon: "python", size: 24 },
-      { name: "MongoDB", icon: "mongodb", size: 25 }
+      { name: "Java", icon: "java", size: 29 },
+      { name: "Python", icon: "python", size: 28 },
+      { name: "MongoDB", icon: "mongodb", size: 29 }
     ]
   },
   ai: {
     heading: "AI",
     items: [
-      { name: "ChatGPT", icon: "chatgpt", size: 25 },
-      { name: "Claude", icon: "claude", size: 25 },
-      { name: "Gemini", icon: "gemini", size: 24 },
-      { name: "Kimi", icon: "kimi", size: 24 },
-      { name: "Qwen", icon: "qwen", size: 24 }
+      { name: "ChatGPT", icon: "chatgpt", size: 28 },
+      { name: "Claude", icon: "claude", size: 29 },
+      { name: "Gemini", icon: "gemini", size: 28 },
+      { name: "Kimi", icon: "kimi", size: 28 },
+      { name: "Qwen", icon: "qwen", size: 28 }
     ]
   }
 };
@@ -57,18 +57,14 @@ function renderMarkdown(data = toolkitData) {
 
     const itemSpans = group.items.map((item, idx) => {
       const isLast = idx === group.items.length - 1;
-      const marginStyle = isLast ? "" : "margin-right:28px;";
-      const size = item.size || 24;
+      const marginStyle = isLast ? "" : "margin-right:36px;";
+      const size = item.size || 28;
       return `  <span style="display:inline-flex;align-items:center;${marginStyle}">\n    <img src="assets/icons/${item.icon}.svg" alt="" width="${size}" height="${size}" valign="middle" />&nbsp;&nbsp;${item.name}\n  </span>`;
     });
 
     // Join with non-breaking spaces for GitHub markdown rendering resilience
-    sections.push(itemSpans.join("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n"));
+    sections.push(itemSpans.join("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n"));
     sections.push("</p>\n");
-
-    if (groupKey !== Object.keys(data)[Object.keys(data).length - 1]) {
-      sections.push("<br>\n");
-    }
   }
 
   return sections.join("\n").trim();
@@ -87,11 +83,10 @@ function renderHtml(data = toolkitData) {
     sections.push('  <div class="toolkit-list">');
 
     for (const item of group.items) {
-      const size = item.size || 24;
-      const styleAttr = size !== 24 ? ` style="width: ${size}px; height: ${size}px;"` : "";
+      const size = item.size || 28;
       sections.push('    <div class="toolkit-item">');
-      sections.push(`      <span class="toolkit-icon"><img src="assets/icons/${item.icon}.svg"${styleAttr} alt="" aria-hidden="true" /></span>`);
-      sections.push(`      <span>${item.name}</span>`);
+      sections.push(`      <span class="toolkit-icon"><img src="assets/icons/${item.icon}.svg" width="${size}" height="${size}" alt="" aria-hidden="true" /></span>`);
+      sections.push(`      <span class="toolkit-name">${item.name}</span>`);
       sections.push('    </div>');
     }
 
