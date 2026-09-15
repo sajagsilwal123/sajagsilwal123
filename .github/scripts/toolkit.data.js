@@ -61,7 +61,7 @@ function renderMarkdown(data = toolkitData) {
       const size = item.size || 28;
       return `  <nobr><img src="assets/icons/${item.icon}.svg" alt="" width="${size}" height="${size}" valign="middle" />&nbsp;&nbsp;${item.name}</nobr>`;
     });
-    sections.push(itemStrings.join("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n"));
+    sections.push(itemStrings.join("&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;\n"));
     sections.push("</p>\n");
   }
 
