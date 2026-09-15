@@ -69,19 +69,19 @@ Active experimentation around how AI can improve software development, engineeri
 
 <p align="left">
   <span style="display:inline-flex;align-items:center;margin-right:28px;">
-    <img src="assets/icons/typescript.svg" alt="" width="20" height="20" valign="middle" />&nbsp;&nbsp;TypeScript
+    <img src="assets/icons/typescript.svg" alt="" width="24" height="24" valign="middle" />&nbsp;&nbsp;TypeScript
   </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <span style="display:inline-flex;align-items:center;margin-right:28px;">
-    <img src="assets/icons/nodejs.svg" alt="" width="20" height="20" valign="middle" />&nbsp;&nbsp;Node.js
+    <img src="assets/icons/nodejs.svg" alt="" width="24" height="24" valign="middle" />&nbsp;&nbsp;Node.js
   </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <span style="display:inline-flex;align-items:center;margin-right:28px;">
-    <img src="assets/icons/nextjs.svg" alt="" width="20" height="20" valign="middle" />&nbsp;&nbsp;Next.js
+    <img src="assets/icons/nextjs.svg" alt="" width="24" height="24" valign="middle" />&nbsp;&nbsp;Next.js
   </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <span style="display:inline-flex;align-items:center;margin-right:28px;">
-    <img src="assets/icons/postgresql.svg" alt="" width="20" height="20" valign="middle" />&nbsp;&nbsp;PostgreSQL
+    <img src="assets/icons/postgresql.svg" alt="" width="25" height="25" valign="middle" />&nbsp;&nbsp;PostgreSQL
   </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <span style="display:inline-flex;align-items:center;">
-    <img src="assets/icons/redis.svg" alt="" width="20" height="20" valign="middle" />&nbsp;&nbsp;Redis
+    <img src="assets/icons/redis.svg" alt="" width="24" height="24" valign="middle" />&nbsp;&nbsp;Redis
   </span>
 </p>
 
@@ -91,16 +91,16 @@ Active experimentation around how AI can improve software development, engineeri
 
 <p align="left">
   <span style="display:inline-flex;align-items:center;margin-right:28px;">
-    <img src="assets/icons/docker.svg" alt="" width="20" height="20" valign="middle" />&nbsp;&nbsp;Docker
+    <img src="assets/icons/docker.svg" alt="" width="25" height="25" valign="middle" />&nbsp;&nbsp;Docker
   </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <span style="display:inline-flex;align-items:center;margin-right:28px;">
-    <img src="assets/icons/nginx.svg" alt="" width="20" height="20" valign="middle" />&nbsp;&nbsp;Nginx
+    <img src="assets/icons/nginx.svg" alt="" width="24" height="24" valign="middle" />&nbsp;&nbsp;Nginx
   </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <span style="display:inline-flex;align-items:center;margin-right:28px;">
-    <img src="assets/icons/linux.svg" alt="" width="20" height="20" valign="middle" />&nbsp;&nbsp;Linux
+    <img src="assets/icons/linux.svg" alt="" width="25" height="25" valign="middle" />&nbsp;&nbsp;Linux
   </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <span style="display:inline-flex;align-items:center;">
-    <img src="assets/icons/github.svg" alt="" width="20" height="20" valign="middle" />&nbsp;&nbsp;GitHub
+    <img src="assets/icons/github.svg" alt="" width="24" height="24" valign="middle" />&nbsp;&nbsp;GitHub
   </span>
 </p>
 
@@ -110,13 +110,13 @@ Active experimentation around how AI can improve software development, engineeri
 
 <p align="left">
   <span style="display:inline-flex;align-items:center;margin-right:28px;">
-    <img src="assets/icons/java.svg" alt="" width="20" height="20" valign="middle" />&nbsp;&nbsp;Java
+    <img src="assets/icons/java.svg" alt="" width="26" height="26" valign="middle" />&nbsp;&nbsp;Java
   </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <span style="display:inline-flex;align-items:center;margin-right:28px;">
-    <img src="assets/icons/python.svg" alt="" width="20" height="20" valign="middle" />&nbsp;&nbsp;Python
+    <img src="assets/icons/python.svg" alt="" width="24" height="24" valign="middle" />&nbsp;&nbsp;Python
   </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <span style="display:inline-flex;align-items:center;">
-    <img src="assets/icons/mongodb.svg" alt="" width="20" height="20" valign="middle" />&nbsp;&nbsp;MongoDB
+    <img src="assets/icons/mongodb.svg" alt="" width="25" height="25" valign="middle" />&nbsp;&nbsp;MongoDB
   </span>
 </p>
 
@@ -126,19 +126,19 @@ Active experimentation around how AI can improve software development, engineeri
 
 <p align="left">
   <span style="display:inline-flex;align-items:center;margin-right:28px;">
-    <img src="assets/icons/chatgpt.svg" alt="" width="20" height="20" valign="middle" />&nbsp;&nbsp;ChatGPT
+    <img src="assets/icons/chatgpt.svg" alt="" width="25" height="25" valign="middle" />&nbsp;&nbsp;ChatGPT
   </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <span style="display:inline-flex;align-items:center;margin-right:28px;">
-    <img src="assets/icons/claude.svg" alt="" width="20" height="20" valign="middle" />&nbsp;&nbsp;Claude
+    <img src="assets/icons/claude.svg" alt="" width="25" height="25" valign="middle" />&nbsp;&nbsp;Claude
   </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <span style="display:inline-flex;align-items:center;margin-right:28px;">
-    <img src="assets/icons/gemini.svg" alt="" width="20" height="20" valign="middle" />&nbsp;&nbsp;Gemini
+    <img src="assets/icons/gemini.svg" alt="" width="24" height="24" valign="middle" />&nbsp;&nbsp;Gemini
   </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <span style="display:inline-flex;align-items:center;margin-right:28px;">
-    <img src="assets/icons/kimi.svg" alt="" width="20" height="20" valign="middle" />&nbsp;&nbsp;Kimi
+    <img src="assets/icons/kimi.svg" alt="" width="24" height="24" valign="middle" />&nbsp;&nbsp;Kimi
   </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <span style="display:inline-flex;align-items:center;">
-    <img src="assets/icons/qwen.svg" alt="" width="20" height="20" valign="middle" />&nbsp;&nbsp;Qwen
+    <img src="assets/icons/qwen.svg" alt="" width="24" height="24" valign="middle" />&nbsp;&nbsp;Qwen
   </span>
 </p>
 

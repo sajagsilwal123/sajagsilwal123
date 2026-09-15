@@ -7,38 +7,38 @@ const toolkitData = {
   build: {
     heading: "Build",
     items: [
-      { name: "TypeScript", icon: "typescript" },
-      { name: "Node.js", icon: "nodejs" },
-      { name: "Next.js", icon: "nextjs" },
-      { name: "PostgreSQL", icon: "postgresql" },
-      { name: "Redis", icon: "redis" }
+      { name: "TypeScript", icon: "typescript", size: 24 },
+      { name: "Node.js", icon: "nodejs", size: 24 },
+      { name: "Next.js", icon: "nextjs", size: 24 },
+      { name: "PostgreSQL", icon: "postgresql", size: 25 },
+      { name: "Redis", icon: "redis", size: 24 }
     ]
   },
   ship: {
     heading: "Ship",
     items: [
-      { name: "Docker", icon: "docker" },
-      { name: "Nginx", icon: "nginx" },
-      { name: "Linux", icon: "linux" },
-      { name: "GitHub", icon: "github" }
+      { name: "Docker", icon: "docker", size: 25 },
+      { name: "Nginx", icon: "nginx", size: 24 },
+      { name: "Linux", icon: "linux", size: 25 },
+      { name: "GitHub", icon: "github", size: 24 }
     ]
   },
   also: {
     heading: "Also",
     items: [
-      { name: "Java", icon: "java" },
-      { name: "Python", icon: "python" },
-      { name: "MongoDB", icon: "mongodb" }
+      { name: "Java", icon: "java", size: 26 },
+      { name: "Python", icon: "python", size: 24 },
+      { name: "MongoDB", icon: "mongodb", size: 25 }
     ]
   },
   ai: {
     heading: "AI",
     items: [
-      { name: "ChatGPT", icon: "chatgpt" },
-      { name: "Claude", icon: "claude" },
-      { name: "Gemini", icon: "gemini" },
-      { name: "Kimi", icon: "kimi" },
-      { name: "Qwen", icon: "qwen" }
+      { name: "ChatGPT", icon: "chatgpt", size: 25 },
+      { name: "Claude", icon: "claude", size: 25 },
+      { name: "Gemini", icon: "gemini", size: 24 },
+      { name: "Kimi", icon: "kimi", size: 24 },
+      { name: "Qwen", icon: "qwen", size: 24 }
     ]
   }
 };
@@ -58,7 +58,8 @@ function renderMarkdown(data = toolkitData) {
     const itemSpans = group.items.map((item, idx) => {
       const isLast = idx === group.items.length - 1;
       const marginStyle = isLast ? "" : "margin-right:28px;";
-      return `  <span style="display:inline-flex;align-items:center;${marginStyle}">\n    <img src="assets/icons/${item.icon}.svg" alt="" width="20" height="20" valign="middle" />&nbsp;&nbsp;${item.name}\n  </span>`;
+      const size = item.size || 24;
+      return `  <span style="display:inline-flex;align-items:center;${marginStyle}">\n    <img src="assets/icons/${item.icon}.svg" alt="" width="${size}" height="${size}" valign="middle" />&nbsp;&nbsp;${item.name}\n  </span>`;
     });
 
     // Join with non-breaking spaces for GitHub markdown rendering resilience
@@ -86,8 +87,10 @@ function renderHtml(data = toolkitData) {
     sections.push('  <div class="toolkit-list">');
 
     for (const item of group.items) {
+      const size = item.size || 24;
+      const styleAttr = size !== 24 ? ` style="width: ${size}px; height: ${size}px;"` : "";
       sections.push('    <div class="toolkit-item">');
-      sections.push(`      <span class="icon"><img src="assets/icons/${item.icon}.svg" alt="" aria-hidden="true" /></span>`);
+      sections.push(`      <span class="toolkit-icon"><img src="assets/icons/${item.icon}.svg"${styleAttr} alt="" aria-hidden="true" /></span>`);
       sections.push(`      <span>${item.name}</span>`);
       sections.push('    </div>');
     }
