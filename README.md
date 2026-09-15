@@ -91,6 +91,11 @@ Technologies I use to build, ship, and explore.
 
 </td>
 </tr>
+</table>
+
+<br>
+
+<table width="100%">
 <tr>
 <td width="50%" valign="top">
 
@@ -114,6 +119,8 @@ Technologies I use to build, ship, and explore.
 </td>
 </tr>
 </table>
+
+<br>
 
 **AI**
 
