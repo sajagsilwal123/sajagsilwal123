@@ -31,8 +31,8 @@ const toolkitData = {
       { name: "AWS", icon: "aws", size: 24 }
     ]
   },
-  more: {
-    heading: "More",
+  also: {
+    heading: "Also",
     items: [
       { name: "Java", icon: "java", size: 25 },
       { name: "Python", icon: "python", size: 24 },
@@ -52,71 +52,110 @@ const toolkitData = {
 };
 
 /**
+ * Helper to render a 2-column compact category table for GitHub Markdown
+ */
+function renderCategoryTable(group, align = "left", width = "48%") {
+  const rows = [];
+  rows.push(`<table align="${align}" width="${width}">`);
+  rows.push(`  <thead>\n    <tr>\n      <th colspan="2" align="left">${group.heading}</th>\n    </tr>\n  </thead>`);
+  rows.push('  <tbody>');
+
+  for (let i = 0; i < group.items.length; i += 2) {
+    const left = group.items[i];
+    const right = group.items[i + 1];
+
+    const leftCell = `<td width="50%" nowrap><img src="assets/icons/${left.icon}.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;${left.name}</td>`;
+    const rightCell = right
+      ? `<td width="50%" nowrap><img src="assets/icons/${right.icon}.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;${right.name}</td>`
+      : '<td width="50%">&nbsp;</td>';
+
+    rows.push('    <tr>');
+    rows.push(`      ${leftCell}\n      ${rightCell}`);
+    rows.push('    </tr>');
+  }
+
+  rows.push('  </tbody>');
+  rows.push('</table>');
+  return rows.join('\n');
+}
+
+/**
  * Generates the GitHub Markdown representation for README.md
- * Uses clean 2-column tables per category with atomic icon + label cells (<td width="50%">).
- * Category headings use <p><strong>Category</strong></p> to prevent GitHub from generating anchor link icons (🔗).
+ * Desktop: Build & Ship side-by-side, Deployment & Cloud & Also side-by-side, AI full width.
+ * Mobile: Naturally flows vertically in single column without card compression.
  */
 function renderMarkdown(data = toolkitData) {
   const sections = [];
   sections.push("## 03 / Toolkit\n");
 
-  const groups = [data.build, data.ship, data.deploy, data.more, data.ai];
-  for (const group of groups) {
-    sections.push(`<p><strong>${group.heading}</strong></p>\n`);
-    sections.push('<table width="100%">');
+  // Row 1: Build & Ship
+  sections.push(renderCategoryTable(data.build, "left", "48%"));
+  sections.push(renderCategoryTable(data.ship, "right", "48%"));
+  sections.push('<br clear="all" />\n');
 
-    for (let i = 0; i < group.items.length; i += 2) {
-      const itemLeft = group.items[i];
-      const itemRight = group.items[i + 1];
+  // Row 2: Deployment & Cloud & Also
+  sections.push(renderCategoryTable(data.deploy, "left", "48%"));
+  sections.push(renderCategoryTable(data.also, "right", "48%"));
+  sections.push('<br clear="all" />\n');
 
-      const leftIcon = `<td width="40" align="center" valign="middle"><img src="assets/icons/${itemLeft.icon}.svg" alt="${itemLeft.name}" width="24" height="24" /></td>`;
-      const leftText = `<td width="40%" valign="middle" nowrap>${itemLeft.name}</td>`;
-
-      let rightIcon = '<td width="40"></td>';
-      let rightText = '<td width="40%"></td>';
-      
-      if (itemRight) {
-        rightIcon = `<td width="40" align="center" valign="middle"><img src="assets/icons/${itemRight.icon}.svg" alt="${itemRight.name}" width="24" height="24" /></td>`;
-        rightText = `<td width="40%" valign="middle" nowrap>${itemRight.name}</td>`;
-      }
-
-      sections.push("  <tr>");
-      sections.push(`    ${leftIcon}\n    ${leftText}\n    ${rightIcon}\n    ${rightText}`);
-      sections.push("  </tr>");
-    }
-
-    sections.push("</table>\n");
+  // Row 3: AI (5 items in 1 row)
+  sections.push('<table width="100%">');
+  sections.push('  <thead>\n    <tr>\n      <th colspan="5" align="left">AI</th>\n    </tr>\n  </thead>');
+  sections.push('  <tbody>\n    <tr>');
+  for (const item of data.ai.items) {
+    sections.push(`      <td width="20%" nowrap><img src="assets/icons/${item.icon}.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;${item.name}</td>`);
   }
+  sections.push('    </tr>\n  </tbody>\n</table>\n');
 
   return sections.join("\n").trim();
 }
 
 /**
  * Generates the semantic HTML representation for preview / web interfaces
+ * Matches the reference mockup styling and layout.
  */
 function renderHtml(data = toolkitData) {
   const sections = [];
-  sections.push('<div class="toolkit-container">');
+  sections.push('<section class="toolkit-section">');
+  sections.push('  <header class="toolkit-header">');
+  sections.push('    <h2 class="toolkit-title">03 / Toolkit</h2>');
+  sections.push('    <div class="toolkit-divider"></div>');
+  sections.push('    <p class="toolkit-description">Technologies I use to build, ship, and explore.</p>');
+  sections.push('  </header>');
+  sections.push('');
+  sections.push('  <div class="toolkit-layout">');
 
-  for (const groupKey of ["build", "ship", "deploy", "more", "ai"]) {
-    const group = data[groupKey];
-    sections.push('  <div class="toolkit-group">');
-    sections.push(`    <div class="toolkit-heading">${group.heading}</div>`);
-    sections.push('    <div class="toolkit-list">');
+  const groups = [
+    { key: "build", wide: false },
+    { key: "ship", wide: false },
+    { key: "deploy", wide: false },
+    { key: "also", wide: false },
+    { key: "ai", wide: true }
+  ];
+
+  for (const { key, wide } of groups) {
+    const group = data[key];
+    const wideClass = wide ? " toolkit-group--wide" : "";
+    sections.push(`    <div class="toolkit-group${wideClass}">`);
+    sections.push(`      <h3 class="toolkit-group-title">${group.heading}</h3>`);
+    sections.push('      <div class="toolkit-grid">');
 
     for (const item of group.items) {
-      const size = item.size || 24;
-      sections.push('      <div class="toolkit-item">');
-      sections.push(`        <span class="toolkit-icon icon--${size}"><img src="assets/icons/${item.icon}.svg" alt="" aria-hidden="true" /></span>`);
-      sections.push(`        <span>${item.name}</span>`);
-      sections.push('      </div>');
+      sections.push('        <div class="toolkit-item">');
+      sections.push('          <div class="toolkit-icon">');
+      sections.push(`            <img src="assets/icons/${item.icon}.svg" alt="">`);
+      sections.push('          </div>');
+      sections.push(`          <span class="toolkit-item-name">${item.name}</span>`);
+      sections.push('        </div>');
     }
 
+    sections.push('      </div>');
     sections.push('    </div>');
-    sections.push('  </div>');
+    sections.push('');
   }
 
-  sections.push('</div>\n');
+  sections.push('  </div>');
+  sections.push('</section>');
   return sections.join("\n").trim();
 }
 

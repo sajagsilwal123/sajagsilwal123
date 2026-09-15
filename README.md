@@ -65,101 +65,97 @@ Active experimentation around how AI can improve software development, engineeri
 
 ## 03 / Toolkit
 
-<p><strong>Build</strong></p>
-
-<table width="100%">
-  <tr>
-    <td width="40" align="center" valign="middle"><img src="assets/icons/typescript.svg" alt="TypeScript" width="24" height="24" /></td>
-    <td width="40%" valign="middle" nowrap>TypeScript</td>
-    <td width="40" align="center" valign="middle"><img src="assets/icons/nodejs.svg" alt="Node.js" width="24" height="24" /></td>
-    <td width="40%" valign="middle" nowrap>Node.js</td>
-  </tr>
-  <tr>
-    <td width="40" align="center" valign="middle"><img src="assets/icons/nextjs.svg" alt="Next.js" width="24" height="24" /></td>
-    <td width="40%" valign="middle" nowrap>Next.js</td>
-    <td width="40" align="center" valign="middle"><img src="assets/icons/postgresql.svg" alt="PostgreSQL" width="24" height="24" /></td>
-    <td width="40%" valign="middle" nowrap>PostgreSQL</td>
-  </tr>
-  <tr>
-    <td width="40" align="center" valign="middle"><img src="assets/icons/redis.svg" alt="Redis" width="24" height="24" /></td>
-    <td width="40%" valign="middle" nowrap>Redis</td>
-    <td width="40"></td>
-    <td width="40%"></td>
-  </tr>
+<table align="left" width="48%">
+  <thead>
+    <tr>
+      <th colspan="2" align="left">Build</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="50%" nowrap><img src="assets/icons/typescript.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;TypeScript</td>
+      <td width="50%" nowrap><img src="assets/icons/nodejs.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;Node.js</td>
+    </tr>
+    <tr>
+      <td width="50%" nowrap><img src="assets/icons/nextjs.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;Next.js</td>
+      <td width="50%" nowrap><img src="assets/icons/postgresql.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;PostgreSQL</td>
+    </tr>
+    <tr>
+      <td width="50%" nowrap><img src="assets/icons/redis.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;Redis</td>
+      <td width="50%">&nbsp;</td>
+    </tr>
+  </tbody>
 </table>
-
-<p><strong>Ship</strong></p>
-
-<table width="100%">
-  <tr>
-    <td width="40" align="center" valign="middle"><img src="assets/icons/docker.svg" alt="Docker" width="24" height="24" /></td>
-    <td width="40%" valign="middle" nowrap>Docker</td>
-    <td width="40" align="center" valign="middle"><img src="assets/icons/nginx.svg" alt="Nginx" width="24" height="24" /></td>
-    <td width="40%" valign="middle" nowrap>Nginx</td>
-  </tr>
-  <tr>
-    <td width="40" align="center" valign="middle"><img src="assets/icons/linux.svg" alt="Linux" width="24" height="24" /></td>
-    <td width="40%" valign="middle" nowrap>Linux</td>
-    <td width="40" align="center" valign="middle"><img src="assets/icons/github.svg" alt="GitHub" width="24" height="24" /></td>
-    <td width="40%" valign="middle" nowrap>GitHub</td>
-  </tr>
+<table align="right" width="48%">
+  <thead>
+    <tr>
+      <th colspan="2" align="left">Ship</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="50%" nowrap><img src="assets/icons/docker.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;Docker</td>
+      <td width="50%" nowrap><img src="assets/icons/nginx.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;Nginx</td>
+    </tr>
+    <tr>
+      <td width="50%" nowrap><img src="assets/icons/linux.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;Linux</td>
+      <td width="50%" nowrap><img src="assets/icons/github.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;GitHub</td>
+    </tr>
+  </tbody>
 </table>
+<br clear="all" />
 
-<p><strong>Deployment & Cloud</strong></p>
-
-<table width="100%">
-  <tr>
-    <td width="40" align="center" valign="middle"><img src="assets/icons/digitalocean.svg" alt="DigitalOcean" width="24" height="24" /></td>
-    <td width="40%" valign="middle" nowrap>DigitalOcean</td>
-    <td width="40" align="center" valign="middle"><img src="assets/icons/vercel.svg" alt="Vercel" width="24" height="24" /></td>
-    <td width="40%" valign="middle" nowrap>Vercel</td>
-  </tr>
-  <tr>
-    <td width="40" align="center" valign="middle"><img src="assets/icons/aws.svg" alt="AWS" width="24" height="24" /></td>
-    <td width="40%" valign="middle" nowrap>AWS</td>
-    <td width="40"></td>
-    <td width="40%"></td>
-  </tr>
+<table align="left" width="48%">
+  <thead>
+    <tr>
+      <th colspan="2" align="left">Deployment & Cloud</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="50%" nowrap><img src="assets/icons/digitalocean.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;DigitalOcean</td>
+      <td width="50%" nowrap><img src="assets/icons/vercel.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;Vercel</td>
+    </tr>
+    <tr>
+      <td width="50%" nowrap><img src="assets/icons/aws.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;AWS</td>
+      <td width="50%">&nbsp;</td>
+    </tr>
+  </tbody>
 </table>
-
-<p><strong>More</strong></p>
-
-<table width="100%">
-  <tr>
-    <td width="40" align="center" valign="middle"><img src="assets/icons/java.svg" alt="Java" width="24" height="24" /></td>
-    <td width="40%" valign="middle" nowrap>Java</td>
-    <td width="40" align="center" valign="middle"><img src="assets/icons/python.svg" alt="Python" width="24" height="24" /></td>
-    <td width="40%" valign="middle" nowrap>Python</td>
-  </tr>
-  <tr>
-    <td width="40" align="center" valign="middle"><img src="assets/icons/mongodb.svg" alt="MongoDB" width="24" height="24" /></td>
-    <td width="40%" valign="middle" nowrap>MongoDB</td>
-    <td width="40"></td>
-    <td width="40%"></td>
-  </tr>
+<table align="right" width="48%">
+  <thead>
+    <tr>
+      <th colspan="2" align="left">Also</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="50%" nowrap><img src="assets/icons/java.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;Java</td>
+      <td width="50%" nowrap><img src="assets/icons/python.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;Python</td>
+    </tr>
+    <tr>
+      <td width="50%" nowrap><img src="assets/icons/mongodb.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;MongoDB</td>
+      <td width="50%">&nbsp;</td>
+    </tr>
+  </tbody>
 </table>
-
-<p><strong>AI</strong></p>
+<br clear="all" />
 
 <table width="100%">
-  <tr>
-    <td width="40" align="center" valign="middle"><img src="assets/icons/chatgpt.svg" alt="ChatGPT" width="24" height="24" /></td>
-    <td width="40%" valign="middle" nowrap>ChatGPT</td>
-    <td width="40" align="center" valign="middle"><img src="assets/icons/claude.svg" alt="Claude" width="24" height="24" /></td>
-    <td width="40%" valign="middle" nowrap>Claude</td>
-  </tr>
-  <tr>
-    <td width="40" align="center" valign="middle"><img src="assets/icons/gemini.svg" alt="Gemini" width="24" height="24" /></td>
-    <td width="40%" valign="middle" nowrap>Gemini</td>
-    <td width="40" align="center" valign="middle"><img src="assets/icons/kimi.svg" alt="Kimi" width="24" height="24" /></td>
-    <td width="40%" valign="middle" nowrap>Kimi</td>
-  </tr>
-  <tr>
-    <td width="40" align="center" valign="middle"><img src="assets/icons/qwen.svg" alt="Qwen" width="24" height="24" /></td>
-    <td width="40%" valign="middle" nowrap>Qwen</td>
-    <td width="40"></td>
-    <td width="40%"></td>
-  </tr>
+  <thead>
+    <tr>
+      <th colspan="5" align="left">AI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="20%" nowrap><img src="assets/icons/chatgpt.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;ChatGPT</td>
+      <td width="20%" nowrap><img src="assets/icons/claude.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;Claude</td>
+      <td width="20%" nowrap><img src="assets/icons/gemini.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;Gemini</td>
+      <td width="20%" nowrap><img src="assets/icons/kimi.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;Kimi</td>
+      <td width="20%" nowrap><img src="assets/icons/qwen.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;Qwen</td>
+    </tr>
+  </tbody>
 </table>
 
 
