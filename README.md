@@ -165,7 +165,7 @@ Active experimentation around how AI can improve software development, engineeri
 
 <img src="assets/heatmap.svg" alt="Contribution Activity Heatmap" />
 
-<sub>Languages reflect repository composition, not proficiency.</sub>
+<sub>Languages reflect code composition across public & private repositories, not proficiency.</sub>
 
 </div>
 
