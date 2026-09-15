@@ -8,6 +8,7 @@ on:
       - main
     paths:
       - '.github/scripts/generate-stats.js'
+      - 'lib/**'
   workflow_dispatch: # Allow manual trigger
 
 jobs:
@@ -28,6 +29,7 @@ jobs:
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: sajagsilwal123
         run: node .github/scripts/generate-stats.js
         
       - name: Commit and Push Changes
