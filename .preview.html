@@ -1,67 +1,194 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Profile Preview</title>
+<title>Sajag Silwal — Portfolio Preview</title>
 <style>
+:root {
+  --bg: #0d1117;
+  --text-primary: #c9d1d9;
+  --text-secondary: #8b949e;
+  --text-hover: #f0f6fc;
+  --border-subtle: #30363d;
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background: #0d1117;
-  color: #c9d1d9;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-  max-width: 800px;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  max-width: 820px;
   margin: 40px auto;
-  padding: 0 16px;
+  padding: 0 20px;
   line-height: 1.6;
 }
+
 .center { text-align: center; }
-a { color: #58a6ff; text-decoration: none; }
-a:hover { text-decoration: underline; }
+
+a {
+  color: #58a6ff;
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 code {
   background: rgba(110, 118, 129, 0.4);
-  padding: 0.2em 0.4em;
+  padding: 0.2em 0.45em;
   border-radius: 6px;
   font-size: 85%;
-  font-family: monospace;
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
 }
-h1 { font-size: 2em; margin-top: 16px; margin-bottom: 8px; }
+
+h1 {
+  font-size: 2.1em;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #f0f6fc;
+}
+
+h2 {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #f0f6fc;
+  margin-top: 36px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 1.15em;
+  font-weight: 600;
+  color: #f0f6fc;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
 blockquote {
-  border-left: 0.25em solid #30363d;
-  padding: 0 1em;
-  color: #8b949e;
+  border-left: 0.25em solid var(--border-subtle);
+  padding: 0.2em 1em;
+  color: var(--text-secondary);
   margin: 20px 0;
 }
+
 hr {
   border: 0;
-  border-top: 1px solid #30363d;
-  margin: 24px 0;
+  border-top: 1px solid var(--border-subtle);
+  margin: 32px 0;
 }
-.avatar {
-  border-radius: 50%;
-  display: inline-block;
-  vertical-align: middle;
+
+/* Toolkit Section Styles */
+.toolkit-group {
+  margin-bottom: 36px;
+}
+
+.toolkit-heading {
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
+}
+
+.toolkit-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 28px;
+}
+
+.toolkit-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--text-primary);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: default;
+  transition:
+    color 160ms ease,
+    opacity 160ms ease,
+    transform 160ms ease;
+  user-select: none;
+}
+
+.toolkit-item:hover {
+  color: var(--text-hover);
+  transform: translateY(-1px);
+}
+
+.toolkit-item .icon {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.toolkit-item .icon img,
+.toolkit-item .icon svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--text-secondary);
+  color: var(--text-secondary);
+  transition: fill 160ms ease, color 160ms ease;
+}
+
+.toolkit-item:hover .icon img,
+.toolkit-item:hover .icon svg {
+  fill: var(--text-hover);
+  color: var(--text-hover);
+  filter: brightness(1.25);
+}
+
+/* Responsive adjustment */
+@media (max-width: 600px) {
+  .toolkit-list {
+    gap: 16px 24px;
+  }
+  .toolkit-item {
+    font-size: 15px;
+  }
+}
+
+.github-analytics {
+  text-align: center;
+  margin: 28px 0;
+}
+
+.github-analytics img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
 }
 </style>
 </head>
 <body>
 
 <div class="center">
-
-<img class="avatar" src="assets/profile.png" alt="Sajag Silwal" width="130" height="130" />
-
-<h1>Sajag Silwal</h1>
-
-<code>engineer</code> · <code>builder</code> · <code>finance student</code>
-<br><br>
-<strong>Building systems. Studying markets.<br>Exploring what happens when the two meet.</strong>
-<br><br>
-Shenzhen, China
-<br><br>
-<a href="https://sajagsilwal.com">Website ↗</a> &nbsp;&nbsp; 
-<a href="https://sajagsilwal.com/writing">Writing ↗</a> &nbsp;&nbsp; 
-<a href="https://github.com/sajagsilwal123">GitHub ↗</a> &nbsp;&nbsp; 
-<a href="mailto:contact@sajagsilwal.com">Email ↗</a>
-
+  <h1>Sajag Silwal</h1>
+  <p>
+    <code>engineer</code> · <code>builder</code> · <code>finance student</code>
+  </p>
+  <p>
+    <strong>Building systems. Studying markets.<br>Exploring what happens when the two meet.</strong>
+  </p>
+  <p style="color: var(--text-secondary);">Shenzhen, China</p>
+  <p>
+    <a href="https://sajagsilwal.com">Website ↗</a> &nbsp;&nbsp; 
+    <a href="https://sajagsilwal.com/writing">Writing ↗</a> &nbsp;&nbsp; 
+    <a href="https://github.com/sajagsilwal123">GitHub ↗</a> &nbsp;&nbsp; 
+    <a href="mailto:contact@sajagsilwal.com">Email ↗</a>
+  </p>
 </div>
 
 <br>
@@ -70,7 +197,150 @@ Shenzhen, China
 
 <br>
 
-I'm a computer engineer from Nepal — I started out building backend systems, products and software around real operational problems.
+<p>I'm a computer engineer from Nepal — I started out building backend systems, products and software around real operational problems.</p>
+
+<p>I'm now pursuing a Master's in Finance at Peking University HSBC Business School in Shenzhen, while exploring markets, quantitative finance and the places where computation meets finance.</p>
+
+<hr>
+
+<h2>01 / Building</h2>
+
+<h3>BasukiMS</h3>
+<p>Fleet resource planning and operational software for a logistics business.</p>
+<p><code>fleet</code> <code>operations</code> <code>accounting</code> <code>inventory</code> <code>analytics</code></p>
+
+<h3>Dhewa</h3>
+<p>An end-to-end experiment in pushing the limits of AI in software engineering, exploring how much of the software lifecycle can be designed, built, tested, refined, and automated with AI as an active engineering collaborator.</p>
+<p><code>ai</code> <code>software engineering</code> <code>experimentation</code> <code>automation` `developer tooling</code></p>
+
+<h3>Aroma & Nexus</h3>
+<p>Connected product and operations work under Iruka Technologies, covering e-commerce, inventory, vendor operations, fulfilment, warehouse workflows, dispatch, tracking, replenishment, and automation.</p>
+<p><code>e-commerce</code> <code>operations</code> <code>inventory</code> <code>fulfilment</code> <code>automation</code></p>
+
+<br>
+
+<h2>02 / Exploring</h2>
+
+<p><code>quant finance</code> · <code>markets</code> · <code>econometrics</code> · <code>risk</code></p>
+<p><code>fintech</code> · <code>market microstructure</code> · <code>investment research</code> · <code>data</code></p>
+
+<br>
+
+<h3>Exploring the potential of AI in software engineering</h3>
+<p>Active experimentation around how AI can improve software development, engineering workflows, automation, code assistance, system design, debugging, and developer productivity.</p>
+<p><code>developer productivity</code> · <code>code assistance</code> · <code>workflows</code> · <code>system design</code> · <code>debugging</code></p>
+
+<br>
+
+<h2>03 / Toolkit</h2>
+
+<div class="toolkit-group">
+  <div class="toolkit-heading">Build</div>
+  <div class="toolkit-list">
+    <div class="toolkit-item">
+      <span class="icon"><img src="assets/icons/typescript.svg" alt="" aria-hidden="true" /></span>
+      <span>TypeScript</span>
+    </div>
+    <div class="toolkit-item">
+      <span class="icon"><img src="assets/icons/nodejs.svg" alt="" aria-hidden="true" /></span>
+      <span>Node.js</span>
+    </div>
+    <div class="toolkit-item">
+      <span class="icon"><img src="assets/icons/nextjs.svg" alt="" aria-hidden="true" /></span>
+      <span>Next.js</span>
+    </div>
+    <div class="toolkit-item">
+      <span class="icon"><img src="assets/icons/postgresql.svg" alt="" aria-hidden="true" /></span>
+      <span>PostgreSQL</span>
+    </div>
+    <div class="toolkit-item">
+      <span class="icon"><img src="assets/icons/redis.svg" alt="" aria-hidden="true" /></span>
+      <span>Redis</span>
+    </div>
+  </div>
+</div>
+
+<div class="toolkit-group">
+  <div class="toolkit-heading">Ship</div>
+  <div class="toolkit-list">
+    <div class="toolkit-item">
+      <span class="icon"><img src="assets/icons/docker.svg" alt="" aria-hidden="true" /></span>
+      <span>Docker</span>
+    </div>
+    <div class="toolkit-item">
+      <span class="icon"><img src="assets/icons/nginx.svg" alt="" aria-hidden="true" /></span>
+      <span>Nginx</span>
+    </div>
+    <div class="toolkit-item">
+      <span class="icon"><img src="assets/icons/linux.svg" alt="" aria-hidden="true" /></span>
+      <span>Linux</span>
+    </div>
+    <div class="toolkit-item">
+      <span class="icon"><img src="assets/icons/github.svg" alt="" aria-hidden="true" /></span>
+      <span>GitHub</span>
+    </div>
+  </div>
+</div>
+
+<div class="toolkit-group">
+  <div class="toolkit-heading">Also</div>
+  <div class="toolkit-list">
+    <div class="toolkit-item">
+      <span class="icon"><img src="assets/icons/java.svg" alt="" aria-hidden="true" /></span>
+      <span>Java</span>
+    </div>
+    <div class="toolkit-item">
+      <span class="icon"><img src="assets/icons/python.svg" alt="" aria-hidden="true" /></span>
+      <span>Python</span>
+    </div>
+    <div class="toolkit-item">
+      <span class="icon"><img src="assets/icons/mongodb.svg" alt="" aria-hidden="true" /></span>
+      <span>MongoDB</span>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<h2>04 / GitHub</h2>
+<p style="color: var(--text-secondary); margin-top: -8px;">things I've been building lately.</p>
+
+<div class="github-analytics">
+  <img src="assets/metrics-row.svg" alt="GitHub Metrics" />
+  <div style="margin-top: 14px; display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+    <img src="assets/stats-card.svg" alt="GitHub Stats" />
+    <img src="assets/languages-card.svg" alt="Most used languages" />
+  </div>
+  <div style="margin-top: 14px;">
+    <img src="assets/heatmap.svg" alt="Contribution Activity Heatmap" />
+  </div>
+  <p style="font-size: 80%; color: var(--text-secondary); margin-top: 8px;">Languages reflect repository composition, not proficiency.</p>
+</div>
+
+<br>
+
+<h2>05 / Writing</h2>
+<p>Ideas worth thinking through.</p>
+<p style="color: var(--text-secondary);">Notes on finance, technology, markets, engineering — and whatever else I find worth writing about.</p>
+<p><a href="https://sajagsilwal.com/writing">Read my notes ↗</a></p>
+
+<br>
+
+<h2>06 / Elsewhere</h2>
+<p>
+  <a href="https://sajagsilwal.com">Website ↗</a><br>
+  <a href="https://sajagsilwal.com/writing">Writing ↗</a><br>
+  <a href="https://github.com/sajagsilwal123">GitHub ↗</a><br>
+  <a href="mailto:contact@sajagsilwal.com">Email ↗</a>
+</p>
+
+<p style="margin-top: 24px;"><strong>say hello → <a href="mailto:contact@sajagsilwal.com">contact@sajagsilwal.com</a></strong></p>
+
+<br>
+
+<div class="center" style="margin-top: 40px; margin-bottom: 40px; font-size: 85%; color: var(--text-secondary);">
+  building systems · studying markets · figuring out what connects them
+</div>
 
 </body>
 </html>
