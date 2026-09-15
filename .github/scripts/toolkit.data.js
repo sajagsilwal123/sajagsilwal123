@@ -23,6 +23,14 @@ const toolkitData = {
       { name: "GitHub", icon: "github", size: 22 }
     ]
   },
+  deploy: {
+    heading: "Deployment & Cloud",
+    items: [
+      { name: "DigitalOcean", icon: "digitalocean", size: 24 },
+      { name: "Vercel", icon: "vercel", size: 22 },
+      { name: "AWS", icon: "aws", size: 24 }
+    ]
+  },
   also: {
     heading: "Also",
     items: [
@@ -52,7 +60,7 @@ function renderMarkdown(data = toolkitData) {
   const sections = [];
   sections.push("## 03 / Toolkit\n");
 
-  const groups = [data.build, data.ship, data.also, data.ai];
+  const groups = [data.build, data.ship, data.deploy, data.also, data.ai];
   for (const group of groups) {
     sections.push(`<p><strong>${group.heading}</strong></p>\n`);
     sections.push('<table width="100%">');
@@ -62,12 +70,12 @@ function renderMarkdown(data = toolkitData) {
       const itemRight = group.items[i + 1];
 
       const leftSize = itemLeft.size || 24;
-      const leftCell = `    <td width="50%"><img src="assets/icons/${itemLeft.icon}.svg" alt="" width="${leftSize}" height="${leftSize}" valign="middle" />&nbsp;&nbsp;${itemLeft.name}</td>`;
+      const leftCell = `    <td width="50%"><img src="assets/icons/${itemLeft.icon}.svg" alt="" width="${leftSize}" height="${leftSize}" valign="middle" />&nbsp;&nbsp;${itemLeft.name}<br></td>`;
 
-      let rightCell = '    <td width="50%">&nbsp;</td>';
+      let rightCell = '    <td width="50%">&nbsp;<br></td>';
       if (itemRight) {
         const rightSize = itemRight.size || 24;
-        rightCell = `    <td width="50%"><img src="assets/icons/${itemRight.icon}.svg" alt="" width="${rightSize}" height="${rightSize}" valign="middle" />&nbsp;&nbsp;${itemRight.name}</td>`;
+        rightCell = `    <td width="50%"><img src="assets/icons/${itemRight.icon}.svg" alt="" width="${rightSize}" height="${rightSize}" valign="middle" />&nbsp;&nbsp;${itemRight.name}<br></td>`;
       }
 
       sections.push("  <tr>");
@@ -89,7 +97,7 @@ function renderHtml(data = toolkitData) {
   const sections = [];
   sections.push('<div class="toolkit-container">');
 
-  for (const groupKey of ["build", "ship", "also", "ai"]) {
+  for (const groupKey of ["build", "ship", "deploy", "also", "ai"]) {
     const group = data[groupKey];
     sections.push('  <div class="toolkit-group">');
     sections.push(`    <div class="toolkit-heading">${group.heading}</div>`);

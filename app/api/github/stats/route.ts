@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getPublicGitHubStats } from '@/lib/github/stats';
+import { getPublicGitHubStats } from '../../../../lib/github/stats';
 
 // Cache responses for 1 hour (3600 seconds) on the server edge, with stale-while-revalidate
 export const revalidate = 3600;
