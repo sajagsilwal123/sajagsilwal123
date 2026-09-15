@@ -65,76 +65,95 @@ Active experimentation around how AI can improve software development, engineeri
 
 ## 03 / Toolkit
 
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
 ### Build
 
 <p align="left">
-  <span style="display:inline-flex;align-items:center;margin-right:36px;">
+  <span style="display:inline-flex;align-items:center;margin-right:20px;margin-bottom:8px;">
     <img src="assets/icons/typescript.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;TypeScript
-  </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <span style="display:inline-flex;align-items:center;margin-right:36px;">
+  </span>&nbsp;&nbsp;&nbsp;&nbsp;
+  <span style="display:inline-flex;align-items:center;margin-right:20px;margin-bottom:8px;">
     <img src="assets/icons/nodejs.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Node.js
-  </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <span style="display:inline-flex;align-items:center;margin-right:36px;">
+  </span>&nbsp;&nbsp;&nbsp;&nbsp;
+  <span style="display:inline-flex;align-items:center;margin-right:20px;margin-bottom:8px;">
     <img src="assets/icons/nextjs.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Next.js
-  </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <span style="display:inline-flex;align-items:center;margin-right:36px;">
+  </span>&nbsp;&nbsp;&nbsp;&nbsp;
+  <span style="display:inline-flex;align-items:center;margin-right:20px;margin-bottom:8px;">
     <img src="assets/icons/postgresql.svg" alt="" width="29" height="29" valign="middle" />&nbsp;&nbsp;PostgreSQL
-  </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <span style="display:inline-flex;align-items:center;">
+  </span>&nbsp;&nbsp;&nbsp;&nbsp;
+  <span style="display:inline-flex;align-items:center;margin-bottom:8px;">
     <img src="assets/icons/redis.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Redis
   </span>
 </p>
 
+</td>
+<td width="50%" valign="top">
+
 ### Ship
 
 <p align="left">
-  <span style="display:inline-flex;align-items:center;margin-right:36px;">
+  <span style="display:inline-flex;align-items:center;margin-right:20px;margin-bottom:8px;">
     <img src="assets/icons/docker.svg" alt="" width="29" height="29" valign="middle" />&nbsp;&nbsp;Docker
-  </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <span style="display:inline-flex;align-items:center;margin-right:36px;">
+  </span>&nbsp;&nbsp;&nbsp;&nbsp;
+  <span style="display:inline-flex;align-items:center;margin-right:20px;margin-bottom:8px;">
     <img src="assets/icons/nginx.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Nginx
-  </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <span style="display:inline-flex;align-items:center;margin-right:36px;">
+  </span>&nbsp;&nbsp;&nbsp;&nbsp;
+  <span style="display:inline-flex;align-items:center;margin-right:20px;margin-bottom:8px;">
     <img src="assets/icons/linux.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Linux
-  </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <span style="display:inline-flex;align-items:center;">
+  </span>&nbsp;&nbsp;&nbsp;&nbsp;
+  <span style="display:inline-flex;align-items:center;margin-bottom:8px;">
     <img src="assets/icons/github.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;GitHub
   </span>
 </p>
 
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
 ### Also
 
 <p align="left">
-  <span style="display:inline-flex;align-items:center;margin-right:36px;">
+  <span style="display:inline-flex;align-items:center;margin-right:20px;margin-bottom:8px;">
     <img src="assets/icons/java.svg" alt="" width="29" height="29" valign="middle" />&nbsp;&nbsp;Java
-  </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <span style="display:inline-flex;align-items:center;margin-right:36px;">
+  </span>&nbsp;&nbsp;&nbsp;&nbsp;
+  <span style="display:inline-flex;align-items:center;margin-right:20px;margin-bottom:8px;">
     <img src="assets/icons/python.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Python
-  </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <span style="display:inline-flex;align-items:center;">
+  </span>&nbsp;&nbsp;&nbsp;&nbsp;
+  <span style="display:inline-flex;align-items:center;margin-bottom:8px;">
     <img src="assets/icons/mongodb.svg" alt="" width="29" height="29" valign="middle" />&nbsp;&nbsp;MongoDB
   </span>
 </p>
 
+</td>
+<td width="50%" valign="top">
+
 ### AI
 
 <p align="left">
-  <span style="display:inline-flex;align-items:center;margin-right:36px;">
+  <span style="display:inline-flex;align-items:center;margin-right:20px;margin-bottom:8px;">
     <img src="assets/icons/chatgpt.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;ChatGPT
-  </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <span style="display:inline-flex;align-items:center;margin-right:36px;">
+  </span>&nbsp;&nbsp;&nbsp;&nbsp;
+  <span style="display:inline-flex;align-items:center;margin-right:20px;margin-bottom:8px;">
     <img src="assets/icons/claude.svg" alt="" width="29" height="29" valign="middle" />&nbsp;&nbsp;Claude
-  </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <span style="display:inline-flex;align-items:center;margin-right:36px;">
+  </span>&nbsp;&nbsp;&nbsp;&nbsp;
+  <span style="display:inline-flex;align-items:center;margin-right:20px;margin-bottom:8px;">
     <img src="assets/icons/gemini.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Gemini
-  </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <span style="display:inline-flex;align-items:center;margin-right:36px;">
+  </span>&nbsp;&nbsp;&nbsp;&nbsp;
+  <span style="display:inline-flex;align-items:center;margin-right:20px;margin-bottom:8px;">
     <img src="assets/icons/kimi.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Kimi
-  </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <span style="display:inline-flex;align-items:center;">
+  </span>&nbsp;&nbsp;&nbsp;&nbsp;
+  <span style="display:inline-flex;align-items:center;margin-bottom:8px;">
     <img src="assets/icons/qwen.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Qwen
   </span>
 </p>
+
+</td>
+</tr>
+</table>
 
 ---
 

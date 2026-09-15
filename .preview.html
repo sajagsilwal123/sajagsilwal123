@@ -85,10 +85,14 @@ hr {
 }
 
 /* Toolkit Section Styles */
-.toolkit-group {
-  margin-bottom: 36px;
+.toolkit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 52px;
+  row-gap: 36px;
 }
-.toolkit-group:last-child {
+
+.toolkit-group {
   margin-bottom: 0;
 }
 
@@ -104,13 +108,13 @@ hr {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 22px 40px;
+  gap: 16px 28px;
 }
 
 .toolkit-item {
   display: inline-flex;
   align-items: center;
-  gap: 11px;
+  gap: 10px;
   color: var(--text-primary);
   font-size: 16px;
   font-weight: 500;
@@ -168,14 +172,15 @@ hr {
 
 /* Responsive adjustment */
 @media (max-width: 768px) {
-  .toolkit-group {
-    margin-bottom: 28px;
+  .toolkit-grid {
+    grid-template-columns: 1fr;
+    row-gap: 28px;
   }
   .toolkit-heading {
     margin-bottom: 12px;
   }
   .toolkit-list {
-    gap: 18px 32px;
+    gap: 14px 24px;
   }
 }
 
@@ -183,11 +188,11 @@ hr {
   .toolkit-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px 20px;
+    gap: 14px 18px;
   }
   .toolkit-item {
     font-size: 15px;
-    gap: 10px;
+    gap: 9px;
   }
   .toolkit-icon {
     width: 28px;
@@ -276,94 +281,96 @@ hr {
 
 <h2>03 / Toolkit</h2>
 
-<div class="toolkit-group">
-  <div class="toolkit-heading">Build</div>
-  <div class="toolkit-list">
-    <div class="toolkit-item">
-      <span class="toolkit-icon icon--28"><img src="assets/icons/typescript.svg" alt="" aria-hidden="true" /></span>
-      <span>TypeScript</span>
-    </div>
-    <div class="toolkit-item">
-      <span class="toolkit-icon icon--28"><img src="assets/icons/nodejs.svg" alt="" aria-hidden="true" /></span>
-      <span>Node.js</span>
-    </div>
-    <div class="toolkit-item">
-      <span class="toolkit-icon icon--28"><img src="assets/icons/nextjs.svg" alt="" aria-hidden="true" /></span>
-      <span>Next.js</span>
-    </div>
-    <div class="toolkit-item">
-      <span class="toolkit-icon icon--29"><img src="assets/icons/postgresql.svg" alt="" aria-hidden="true" /></span>
-      <span>PostgreSQL</span>
-    </div>
-    <div class="toolkit-item">
-      <span class="toolkit-icon icon--28"><img src="assets/icons/redis.svg" alt="" aria-hidden="true" /></span>
-      <span>Redis</span>
-    </div>
-  </div>
-</div>
-
-<div class="toolkit-group">
-  <div class="toolkit-heading">Ship</div>
-  <div class="toolkit-list">
-    <div class="toolkit-item">
-      <span class="toolkit-icon icon--29"><img src="assets/icons/docker.svg" alt="" aria-hidden="true" /></span>
-      <span>Docker</span>
-    </div>
-    <div class="toolkit-item">
-      <span class="toolkit-icon icon--28"><img src="assets/icons/nginx.svg" alt="" aria-hidden="true" /></span>
-      <span>Nginx</span>
-    </div>
-    <div class="toolkit-item">
-      <span class="toolkit-icon icon--28"><img src="assets/icons/linux.svg" alt="" aria-hidden="true" /></span>
-      <span>Linux</span>
-    </div>
-    <div class="toolkit-item">
-      <span class="toolkit-icon icon--28"><img src="assets/icons/github.svg" alt="" aria-hidden="true" /></span>
-      <span>GitHub</span>
+<div class="toolkit-grid">
+  <div class="toolkit-group">
+    <div class="toolkit-heading">Build</div>
+    <div class="toolkit-list">
+      <div class="toolkit-item">
+        <span class="toolkit-icon icon--28"><img src="assets/icons/typescript.svg" alt="" aria-hidden="true" /></span>
+        <span>TypeScript</span>
+      </div>
+      <div class="toolkit-item">
+        <span class="toolkit-icon icon--28"><img src="assets/icons/nodejs.svg" alt="" aria-hidden="true" /></span>
+        <span>Node.js</span>
+      </div>
+      <div class="toolkit-item">
+        <span class="toolkit-icon icon--28"><img src="assets/icons/nextjs.svg" alt="" aria-hidden="true" /></span>
+        <span>Next.js</span>
+      </div>
+      <div class="toolkit-item">
+        <span class="toolkit-icon icon--29"><img src="assets/icons/postgresql.svg" alt="" aria-hidden="true" /></span>
+        <span>PostgreSQL</span>
+      </div>
+      <div class="toolkit-item">
+        <span class="toolkit-icon icon--28"><img src="assets/icons/redis.svg" alt="" aria-hidden="true" /></span>
+        <span>Redis</span>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="toolkit-group">
-  <div class="toolkit-heading">Also</div>
-  <div class="toolkit-list">
-    <div class="toolkit-item">
-      <span class="toolkit-icon icon--29"><img src="assets/icons/java.svg" alt="" aria-hidden="true" /></span>
-      <span>Java</span>
-    </div>
-    <div class="toolkit-item">
-      <span class="toolkit-icon icon--28"><img src="assets/icons/python.svg" alt="" aria-hidden="true" /></span>
-      <span>Python</span>
-    </div>
-    <div class="toolkit-item">
-      <span class="toolkit-icon icon--29"><img src="assets/icons/mongodb.svg" alt="" aria-hidden="true" /></span>
-      <span>MongoDB</span>
+  <div class="toolkit-group">
+    <div class="toolkit-heading">Ship</div>
+    <div class="toolkit-list">
+      <div class="toolkit-item">
+        <span class="toolkit-icon icon--29"><img src="assets/icons/docker.svg" alt="" aria-hidden="true" /></span>
+        <span>Docker</span>
+      </div>
+      <div class="toolkit-item">
+        <span class="toolkit-icon icon--28"><img src="assets/icons/nginx.svg" alt="" aria-hidden="true" /></span>
+        <span>Nginx</span>
+      </div>
+      <div class="toolkit-item">
+        <span class="toolkit-icon icon--28"><img src="assets/icons/linux.svg" alt="" aria-hidden="true" /></span>
+        <span>Linux</span>
+      </div>
+      <div class="toolkit-item">
+        <span class="toolkit-icon icon--28"><img src="assets/icons/github.svg" alt="" aria-hidden="true" /></span>
+        <span>GitHub</span>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="toolkit-group">
-  <div class="toolkit-heading">AI</div>
-  <div class="toolkit-list">
-    <div class="toolkit-item">
-      <span class="toolkit-icon icon--28"><img src="assets/icons/chatgpt.svg" alt="" aria-hidden="true" /></span>
-      <span>ChatGPT</span>
+  <div class="toolkit-group">
+    <div class="toolkit-heading">Also</div>
+    <div class="toolkit-list">
+      <div class="toolkit-item">
+        <span class="toolkit-icon icon--29"><img src="assets/icons/java.svg" alt="" aria-hidden="true" /></span>
+        <span>Java</span>
+      </div>
+      <div class="toolkit-item">
+        <span class="toolkit-icon icon--28"><img src="assets/icons/python.svg" alt="" aria-hidden="true" /></span>
+        <span>Python</span>
+      </div>
+      <div class="toolkit-item">
+        <span class="toolkit-icon icon--29"><img src="assets/icons/mongodb.svg" alt="" aria-hidden="true" /></span>
+        <span>MongoDB</span>
+      </div>
     </div>
-    <div class="toolkit-item">
-      <span class="toolkit-icon icon--29"><img src="assets/icons/claude.svg" alt="" aria-hidden="true" /></span>
-      <span>Claude</span>
-    </div>
-    <div class="toolkit-item">
-      <span class="toolkit-icon icon--28"><img src="assets/icons/gemini.svg" alt="" aria-hidden="true" /></span>
-      <span>Gemini</span>
-    </div>
-    <div class="toolkit-item">
-      <span class="toolkit-icon icon--28"><img src="assets/icons/kimi.svg" alt="" aria-hidden="true" /></span>
-      <span>Kimi</span>
-    </div>
-    <div class="toolkit-item">
-      <span class="toolkit-icon icon--28"><img src="assets/icons/qwen.svg" alt="" aria-hidden="true" /></span>
-      <span>Qwen</span>
+  </div>
+
+  <div class="toolkit-group">
+    <div class="toolkit-heading">AI</div>
+    <div class="toolkit-list">
+      <div class="toolkit-item">
+        <span class="toolkit-icon icon--28"><img src="assets/icons/chatgpt.svg" alt="" aria-hidden="true" /></span>
+        <span>ChatGPT</span>
+      </div>
+      <div class="toolkit-item">
+        <span class="toolkit-icon icon--29"><img src="assets/icons/claude.svg" alt="" aria-hidden="true" /></span>
+        <span>Claude</span>
+      </div>
+      <div class="toolkit-item">
+        <span class="toolkit-icon icon--28"><img src="assets/icons/gemini.svg" alt="" aria-hidden="true" /></span>
+        <span>Gemini</span>
+      </div>
+      <div class="toolkit-item">
+        <span class="toolkit-icon icon--28"><img src="assets/icons/kimi.svg" alt="" aria-hidden="true" /></span>
+        <span>Kimi</span>
+      </div>
+      <div class="toolkit-item">
+        <span class="toolkit-icon icon--28"><img src="assets/icons/qwen.svg" alt="" aria-hidden="true" /></span>
+        <span>Qwen</span>
+      </div>
     </div>
   </div>
 </div>

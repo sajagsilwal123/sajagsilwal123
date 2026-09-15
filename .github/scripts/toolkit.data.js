@@ -45,27 +45,45 @@ const toolkitData = {
 
 /**
  * Generates the GitHub Markdown representation for README.md
+ * Two-column category layout: Build & Ship side by side, Also & AI side by side below.
  */
 function renderMarkdown(data = toolkitData) {
   const sections = [];
   sections.push("## 03 / Toolkit\n");
 
-  for (const groupKey of Object.keys(data)) {
-    const group = data[groupKey];
-    sections.push(`### ${group.heading}\n`);
-    sections.push('<p align="left">');
-
+  const renderGroupCell = (group) => {
+    const lines = [];
+    lines.push(`<h3>${group.heading}</h3>\n`);
+    lines.push('<p align="left">');
     const itemSpans = group.items.map((item, idx) => {
       const isLast = idx === group.items.length - 1;
-      const marginStyle = isLast ? "" : "margin-right:36px;";
+      const marginStyle = isLast ? "margin-bottom:8px;" : "margin-right:20px;margin-bottom:8px;";
       const size = item.size || 28;
       return `  <span style="display:inline-flex;align-items:center;${marginStyle}">\n    <img src="assets/icons/${item.icon}.svg" alt="" width="${size}" height="${size}" valign="middle" />&nbsp;&nbsp;${item.name}\n  </span>`;
     });
+    lines.push(itemSpans.join("&nbsp;&nbsp;&nbsp;&nbsp;\n"));
+    lines.push("</p>");
+    return lines.join("\n");
+  };
 
-    // Join with non-breaking spaces for GitHub markdown rendering resilience
-    sections.push(itemSpans.join("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n"));
-    sections.push("</p>\n");
-  }
+  sections.push('<table width="100%">');
+  sections.push('<tr>');
+  sections.push('<td width="50%" valign="top">\n');
+  sections.push(renderGroupCell(data.build));
+  sections.push('\n</td>');
+  sections.push('<td width="50%" valign="top">\n');
+  sections.push(renderGroupCell(data.ship));
+  sections.push('\n</td>');
+  sections.push('</tr>');
+  sections.push('<tr>');
+  sections.push('<td width="50%" valign="top">\n');
+  sections.push(renderGroupCell(data.also));
+  sections.push('\n</td>');
+  sections.push('<td width="50%" valign="top">\n');
+  sections.push(renderGroupCell(data.ai));
+  sections.push('\n</td>');
+  sections.push('</tr>');
+  sections.push('</table>\n');
 
   return sections.join("\n").trim();
 }
@@ -75,25 +93,27 @@ function renderMarkdown(data = toolkitData) {
  */
 function renderHtml(data = toolkitData) {
   const sections = [];
+  sections.push('<div class="toolkit-grid">');
 
-  for (const groupKey of Object.keys(data)) {
+  for (const groupKey of ["build", "ship", "also", "ai"]) {
     const group = data[groupKey];
-    sections.push('<div class="toolkit-group">');
-    sections.push(`  <div class="toolkit-heading">${group.heading}</div>`);
-    sections.push('  <div class="toolkit-list">');
+    sections.push('  <div class="toolkit-group">');
+    sections.push(`    <div class="toolkit-heading">${group.heading}</div>`);
+    sections.push('    <div class="toolkit-list">');
 
     for (const item of group.items) {
       const size = item.size || 28;
-      sections.push('    <div class="toolkit-item">');
-      sections.push(`      <span class="toolkit-icon"><img src="assets/icons/${item.icon}.svg" width="${size}" height="${size}" alt="" aria-hidden="true" /></span>`);
-      sections.push(`      <span class="toolkit-name">${item.name}</span>`);
-      sections.push('    </div>');
+      sections.push('      <div class="toolkit-item">');
+      sections.push(`        <span class="toolkit-icon icon--${size}"><img src="assets/icons/${item.icon}.svg" alt="" aria-hidden="true" /></span>`);
+      sections.push(`        <span>${item.name}</span>`);
+      sections.push('      </div>');
     }
 
+    sections.push('    </div>');
     sections.push('  </div>');
-    sections.push('</div>\n');
   }
 
+  sections.push('</div>\n');
   return sections.join("\n").trim();
 }
 
