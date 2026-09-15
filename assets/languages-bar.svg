@@ -12,40 +12,40 @@
   </clipPath>
 
   <g clip-path="url(#bar-clip)">
-    <rect x="10" y="14" width="321" height="8" fill="#3178c6" /><rect x="331" y="14" width="241" height="8" fill="#3572A5" /><rect x="572" y="14" width="99" height="8" fill="#61dafb" /><rect x="671" y="14" width="68" height="8" fill="#b07219" /><rect x="739" y="14" width="31" height="8" fill="#336791" /><rect x="770" y="14" width="20" height="8" fill="#89e051" />
+    <rect x="10" y="14" width="751" height="8" fill="#3572A5" /><rect x="761" y="14" width="16" height="8" fill="#f1e05a" /><rect x="777" y="14" width="8" height="8" fill="#e34c26" /><rect x="785" y="14" width="4" height="8" fill="#663399" /><rect x="789" y="14" width="2" height="8" fill="#ecdebe" /><rect x="791" y="14" width="2" height="8" fill="#012456" />
   </g>
 
   <!-- Language labels legend -->
   <g>
     
-      <circle cx="14" cy="42" r="4" fill="#3178c6" />
+      <circle cx="14" cy="42" r="4" fill="#3572A5" />
       <text x="23" y="46" class="lang-label">
-        <tspan class="lang-name">TypeScript</tspan> <tspan class="lang-pct">41.2%</tspan>
+        <tspan class="lang-name">Python</tspan> <tspan class="lang-pct">96.2%</tspan>
       </text>
     
-      <circle cx="157" cy="42" r="4" fill="#3572A5" />
-      <text x="166" y="46" class="lang-label">
-        <tspan class="lang-name">Python</tspan> <tspan class="lang-pct">30.9%</tspan>
+      <circle cx="127" cy="42" r="4" fill="#f1e05a" />
+      <text x="136" y="46" class="lang-label">
+        <tspan class="lang-name">JavaScript</tspan> <tspan class="lang-pct">2.0%</tspan>
       </text>
     
-      <circle cx="270" cy="42" r="4" fill="#61dafb" />
+      <circle cx="270" cy="42" r="4" fill="#e34c26" />
       <text x="279" y="46" class="lang-label">
-        <tspan class="lang-name">Next.js / React</tspan> <tspan class="lang-pct">12.7%</tspan>
+        <tspan class="lang-name">HTML</tspan> <tspan class="lang-pct">1.0%</tspan>
       </text>
     
-      <circle cx="450.5" cy="42" r="4" fill="#b07219" />
-      <text x="459.5" y="46" class="lang-label">
-        <tspan class="lang-name">Java</tspan> <tspan class="lang-pct">8.7%</tspan>
+      <circle cx="368" cy="42" r="4" fill="#663399" />
+      <text x="377" y="46" class="lang-label">
+        <tspan class="lang-name">CSS</tspan> <tspan class="lang-pct">0.5%</tspan>
       </text>
     
-      <circle cx="548.5" cy="42" r="4" fill="#336791" />
-      <text x="557.5" y="46" class="lang-label">
-        <tspan class="lang-name">PostgreSQL</tspan> <tspan class="lang-pct">4.0%</tspan>
+      <circle cx="458.5" cy="42" r="4" fill="#ecdebe" />
+      <text x="467.5" y="46" class="lang-label">
+        <tspan class="lang-name">Roff</tspan> <tspan class="lang-pct">0.1%</tspan>
       </text>
     
-      <circle cx="691.5" cy="42" r="4" fill="#89e051" />
-      <text x="700.5" y="46" class="lang-label">
-        <tspan class="lang-name">Shell</tspan> <tspan class="lang-pct">2.5%</tspan>
+      <circle cx="556.5" cy="42" r="4" fill="#012456" />
+      <text x="565.5" y="46" class="lang-label">
+        <tspan class="lang-name">PowerShell</tspan> <tspan class="lang-pct">0.0%</tspan>
       </text>
     
   </g>
