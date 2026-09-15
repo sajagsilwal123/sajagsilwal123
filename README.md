@@ -69,15 +69,15 @@ Active experimentation around how AI can improve software development, engineeri
 
 <table width="100%">
   <tr>
-    <td width="50%"><img src="assets/icons/typescript.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;TypeScript</td>
-    <td width="50%"><img src="assets/icons/nodejs.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;Node.js</td>
+    <td width="50%"><img src="assets/icons/typescript.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;TypeScript</td>
+    <td width="50%"><img src="assets/icons/nodejs.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;Node.js</td>
   </tr>
   <tr>
-    <td width="50%"><img src="assets/icons/nextjs.svg" alt="" width="22" height="22" align="absmiddle" />&nbsp;&nbsp;Next.js</td>
-    <td width="50%"><img src="assets/icons/postgresql.svg" alt="" width="25" height="25" align="absmiddle" />&nbsp;&nbsp;PostgreSQL</td>
+    <td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/nextjs.svg" /><img src="assets/icons/nextjs-light.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" /></picture>&nbsp;&nbsp;Next.js</td>
+    <td width="50%"><img src="assets/icons/postgresql.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;PostgreSQL</td>
   </tr>
   <tr>
-    <td width="50%"><img src="assets/icons/redis.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;Redis</td>
+    <td width="50%"><img src="assets/icons/redis.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;Redis</td>
     <td width="50%">&nbsp;</td>
   </tr>
 </table>
@@ -86,24 +86,24 @@ Active experimentation around how AI can improve software development, engineeri
 
 <table width="100%">
   <tr>
-    <td width="50%"><img src="assets/icons/docker.svg" alt="" width="25" height="25" align="absmiddle" />&nbsp;&nbsp;Docker</td>
-    <td width="50%"><img src="assets/icons/nginx.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;Nginx</td>
+    <td width="50%"><img src="assets/icons/docker.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;Docker</td>
+    <td width="50%"><img src="assets/icons/nginx.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;Nginx</td>
   </tr>
   <tr>
-    <td width="50%"><img src="assets/icons/linux.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;Linux</td>
-    <td width="50%"><img src="assets/icons/github.svg" alt="" width="22" height="22" align="absmiddle" />&nbsp;&nbsp;GitHub</td>
+    <td width="50%"><img src="assets/icons/linux.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;Linux</td>
+    <td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github.svg" /><img src="assets/icons/github-light.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" /></picture>&nbsp;&nbsp;GitHub</td>
   </tr>
 </table>
 
-<p><strong>Deployment & Cloud</strong></p>
+<p><strong>Deployment &amp; Cloud</strong></p>
 
 <table width="100%">
   <tr>
-    <td width="50%"><img src="assets/icons/digitalocean.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;DigitalOcean</td>
-    <td width="50%"><img src="assets/icons/vercel.svg" alt="" width="22" height="22" align="absmiddle" />&nbsp;&nbsp;Vercel</td>
+    <td width="50%"><img src="assets/icons/digitalocean.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;DigitalOcean</td>
+    <td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/vercel.svg" /><img src="assets/icons/vercel-light.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" /></picture>&nbsp;&nbsp;Vercel</td>
   </tr>
   <tr>
-    <td width="50%"><img src="assets/icons/aws.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;AWS</td>
+    <td width="50%"><img src="assets/icons/aws.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;AWS</td>
     <td width="50%">&nbsp;</td>
   </tr>
 </table>
@@ -112,11 +112,11 @@ Active experimentation around how AI can improve software development, engineeri
 
 <table width="100%">
   <tr>
-    <td width="50%"><img src="assets/icons/java.svg" alt="" width="25" height="25" align="absmiddle" />&nbsp;&nbsp;Java</td>
-    <td width="50%"><img src="assets/icons/python.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;Python</td>
+    <td width="50%"><img src="assets/icons/java.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;Java</td>
+    <td width="50%"><img src="assets/icons/python.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;Python</td>
   </tr>
   <tr>
-    <td width="50%"><img src="assets/icons/mongodb.svg" alt="" width="25" height="25" align="absmiddle" />&nbsp;&nbsp;MongoDB</td>
+    <td width="50%"><img src="assets/icons/mongodb.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;MongoDB</td>
     <td width="50%">&nbsp;</td>
   </tr>
 </table>
@@ -125,15 +125,15 @@ Active experimentation around how AI can improve software development, engineeri
 
 <table width="100%">
   <tr>
-    <td width="50%"><img src="assets/icons/chatgpt.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;ChatGPT</td>
-    <td width="50%"><img src="assets/icons/claude.svg" alt="" width="25" height="25" align="absmiddle" />&nbsp;&nbsp;Claude</td>
+    <td width="50%"><img src="assets/icons/chatgpt.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;ChatGPT</td>
+    <td width="50%"><img src="assets/icons/claude.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;Claude</td>
   </tr>
   <tr>
-    <td width="50%"><img src="assets/icons/gemini.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;Gemini</td>
-    <td width="50%"><img src="assets/icons/kimi.svg" alt="" width="22" height="22" align="absmiddle" />&nbsp;&nbsp;Kimi</td>
+    <td width="50%"><img src="assets/icons/gemini.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;Gemini</td>
+    <td width="50%"><img src="assets/icons/kimi.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;Kimi</td>
   </tr>
   <tr>
-    <td width="50%"><img src="assets/icons/qwen.svg" alt="" width="24" height="24" align="absmiddle" />&nbsp;&nbsp;Qwen</td>
+    <td width="50%"><img src="assets/icons/qwen.svg" alt="" width="20" height="20" style="vertical-align:text-bottom" />&nbsp;&nbsp;Qwen</td>
     <td width="50%">&nbsp;</td>
   </tr>
 </table>
