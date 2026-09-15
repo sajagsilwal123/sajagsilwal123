@@ -86,9 +86,14 @@ hr {
 
 /* Toolkit Section Styles */
 .toolkit-container {
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px 32px;
+}
+
+/* Make AI section full width */
+.toolkit-container > :nth-child(5) {
+  grid-column: 1 / -1;
 }
 
 .toolkit-group {
@@ -175,8 +180,9 @@ hr {
 }
 
 /* Responsive adjustment */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .toolkit-container {
+    grid-template-columns: 1fr;
     gap: 18px; /* ~15% vertical reduction */
   }
   .toolkit-heading {
@@ -322,7 +328,7 @@ hr {
     </div>
   </div>
   <div class="toolkit-group">
-    <div class="toolkit-heading">Also</div>
+    <div class="toolkit-heading">More</div>
     <div class="toolkit-list">
       <div class="toolkit-item">
         <span class="toolkit-icon icon--25"><img src="assets/icons/java.svg" alt="" aria-hidden="true" /></span>

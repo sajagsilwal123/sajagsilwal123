@@ -31,8 +31,8 @@ const toolkitData = {
       { name: "AWS", icon: "aws", size: 24 }
     ]
   },
-  also: {
-    heading: "Also",
+  more: {
+    heading: "More",
     items: [
       { name: "Java", icon: "java", size: 25 },
       { name: "Python", icon: "python", size: 24 },
@@ -60,7 +60,7 @@ function renderMarkdown(data = toolkitData) {
   const sections = [];
   sections.push("## 03 / Toolkit\n");
 
-  const groups = [data.build, data.ship, data.deploy, data.also, data.ai];
+  const groups = [data.build, data.ship, data.deploy, data.more, data.ai];
   for (const group of groups) {
     sections.push(`<p><strong>${group.heading}</strong></p>\n`);
     sections.push('<table width="100%">');
@@ -69,18 +69,19 @@ function renderMarkdown(data = toolkitData) {
       const itemLeft = group.items[i];
       const itemRight = group.items[i + 1];
 
-      const leftSize = itemLeft.size || 24;
-      const leftCell = `    <td width="50%"><img src="assets/icons/${itemLeft.icon}.svg" alt="" width="${leftSize}" height="${leftSize}" valign="middle" />&nbsp;&nbsp;${itemLeft.name}<br></td>`;
+      const leftIcon = `<td width="40" align="center" valign="middle"><img src="assets/icons/${itemLeft.icon}.svg" alt="${itemLeft.name}" width="24" height="24" /></td>`;
+      const leftText = `<td width="40%" valign="middle" nowrap>${itemLeft.name}</td>`;
 
-      let rightCell = '    <td width="50%">&nbsp;<br></td>';
+      let rightIcon = '<td width="40"></td>';
+      let rightText = '<td width="40%"></td>';
+      
       if (itemRight) {
-        const rightSize = itemRight.size || 24;
-        rightCell = `    <td width="50%"><img src="assets/icons/${itemRight.icon}.svg" alt="" width="${rightSize}" height="${rightSize}" valign="middle" />&nbsp;&nbsp;${itemRight.name}<br></td>`;
+        rightIcon = `<td width="40" align="center" valign="middle"><img src="assets/icons/${itemRight.icon}.svg" alt="${itemRight.name}" width="24" height="24" /></td>`;
+        rightText = `<td width="40%" valign="middle" nowrap>${itemRight.name}</td>`;
       }
 
       sections.push("  <tr>");
-      sections.push(leftCell);
-      sections.push(rightCell);
+      sections.push(`    ${leftIcon}\n    ${leftText}\n    ${rightIcon}\n    ${rightText}`);
       sections.push("  </tr>");
     }
 
@@ -97,7 +98,7 @@ function renderHtml(data = toolkitData) {
   const sections = [];
   sections.push('<div class="toolkit-container">');
 
-  for (const groupKey of ["build", "ship", "deploy", "also", "ai"]) {
+  for (const groupKey of ["build", "ship", "deploy", "more", "ai"]) {
     const group = data[groupKey];
     sections.push('  <div class="toolkit-group">');
     sections.push(`    <div class="toolkit-heading">${group.heading}</div>`);
