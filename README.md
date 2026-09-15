@@ -65,42 +65,65 @@ Active experimentation around how AI can improve software development, engineeri
 
 ## 03 / Toolkit
 
-### Build
+<p><strong>Build</strong></p>
 
-<p align="left">
-  <nobr><img src="assets/icons/typescript.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;TypeScript</nobr>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-  <nobr><img src="assets/icons/nodejs.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Node.js</nobr>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-  <nobr><img src="assets/icons/nextjs.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Next.js</nobr>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-  <nobr><img src="assets/icons/postgresql.svg" alt="" width="29" height="29" valign="middle" />&nbsp;&nbsp;PostgreSQL</nobr>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-  <nobr><img src="assets/icons/redis.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Redis</nobr>
-</p>
+<table width="100%">
+  <tr>
+    <td width="50%"><img src="assets/icons/typescript.svg" alt="" width="24" height="24" valign="middle" />&nbsp;&nbsp;TypeScript</td>
+    <td width="50%"><img src="assets/icons/nodejs.svg" alt="" width="24" height="24" valign="middle" />&nbsp;&nbsp;Node.js</td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="assets/icons/nextjs.svg" alt="" width="22" height="22" valign="middle" />&nbsp;&nbsp;Next.js</td>
+    <td width="50%"><img src="assets/icons/postgresql.svg" alt="" width="25" height="25" valign="middle" />&nbsp;&nbsp;PostgreSQL</td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="assets/icons/redis.svg" alt="" width="24" height="24" valign="middle" />&nbsp;&nbsp;Redis</td>
+    <td width="50%">&nbsp;</td>
+  </tr>
+</table>
 
-### Ship
+<p><strong>Ship</strong></p>
 
-<p align="left">
-  <nobr><img src="assets/icons/docker.svg" alt="" width="29" height="29" valign="middle" />&nbsp;&nbsp;Docker</nobr>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-  <nobr><img src="assets/icons/nginx.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Nginx</nobr>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-  <nobr><img src="assets/icons/linux.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Linux</nobr>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-  <nobr><img src="assets/icons/github.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;GitHub</nobr>
-</p>
+<table width="100%">
+  <tr>
+    <td width="50%"><img src="assets/icons/docker.svg" alt="" width="25" height="25" valign="middle" />&nbsp;&nbsp;Docker</td>
+    <td width="50%"><img src="assets/icons/nginx.svg" alt="" width="24" height="24" valign="middle" />&nbsp;&nbsp;Nginx</td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="assets/icons/linux.svg" alt="" width="24" height="24" valign="middle" />&nbsp;&nbsp;Linux</td>
+    <td width="50%"><img src="assets/icons/github.svg" alt="" width="22" height="22" valign="middle" />&nbsp;&nbsp;GitHub</td>
+  </tr>
+</table>
 
-### Also
+<p><strong>Also</strong></p>
 
-<p align="left">
-  <nobr><img src="assets/icons/java.svg" alt="" width="29" height="29" valign="middle" />&nbsp;&nbsp;Java</nobr>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-  <nobr><img src="assets/icons/python.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Python</nobr>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-  <nobr><img src="assets/icons/mongodb.svg" alt="" width="29" height="29" valign="middle" />&nbsp;&nbsp;MongoDB</nobr>
-</p>
+<table width="100%">
+  <tr>
+    <td width="50%"><img src="assets/icons/java.svg" alt="" width="25" height="25" valign="middle" />&nbsp;&nbsp;Java</td>
+    <td width="50%"><img src="assets/icons/python.svg" alt="" width="24" height="24" valign="middle" />&nbsp;&nbsp;Python</td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="assets/icons/mongodb.svg" alt="" width="25" height="25" valign="middle" />&nbsp;&nbsp;MongoDB</td>
+    <td width="50%">&nbsp;</td>
+  </tr>
+</table>
 
-### AI
+<p><strong>AI</strong></p>
 
-<p align="left">
-  <nobr><img src="assets/icons/chatgpt.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;ChatGPT</nobr>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-  <nobr><img src="assets/icons/claude.svg" alt="" width="29" height="29" valign="middle" />&nbsp;&nbsp;Claude</nobr>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-  <nobr><img src="assets/icons/gemini.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Gemini</nobr>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-  <nobr><img src="assets/icons/kimi.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Kimi</nobr>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-  <nobr><img src="assets/icons/qwen.svg" alt="" width="28" height="28" valign="middle" />&nbsp;&nbsp;Qwen</nobr>
-</p>
+<table width="100%">
+  <tr>
+    <td width="50%"><img src="assets/icons/chatgpt.svg" alt="" width="24" height="24" valign="middle" />&nbsp;&nbsp;ChatGPT</td>
+    <td width="50%"><img src="assets/icons/claude.svg" alt="" width="25" height="25" valign="middle" />&nbsp;&nbsp;Claude</td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="assets/icons/gemini.svg" alt="" width="24" height="24" valign="middle" />&nbsp;&nbsp;Gemini</td>
+    <td width="50%"><img src="assets/icons/kimi.svg" alt="" width="22" height="22" valign="middle" />&nbsp;&nbsp;Kimi</td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="assets/icons/qwen.svg" alt="" width="24" height="24" valign="middle" />&nbsp;&nbsp;Qwen</td>
+    <td width="50%">&nbsp;</td>
+  </tr>
+</table>
 
 ---
 

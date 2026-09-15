@@ -7,47 +7,46 @@ const toolkitData = {
   build: {
     heading: "Build",
     items: [
-      { name: "TypeScript", icon: "typescript", size: 28 },
-      { name: "Node.js", icon: "nodejs", size: 28 },
-      { name: "Next.js", icon: "nextjs", size: 28 },
-      { name: "PostgreSQL", icon: "postgresql", size: 29 },
-      { name: "Redis", icon: "redis", size: 28 }
+      { name: "TypeScript", icon: "typescript", size: 24 },
+      { name: "Node.js", icon: "nodejs", size: 24 },
+      { name: "Next.js", icon: "nextjs", size: 22 },
+      { name: "PostgreSQL", icon: "postgresql", size: 25 },
+      { name: "Redis", icon: "redis", size: 24 }
     ]
   },
   ship: {
     heading: "Ship",
     items: [
-      { name: "Docker", icon: "docker", size: 29 },
-      { name: "Nginx", icon: "nginx", size: 28 },
-      { name: "Linux", icon: "linux", size: 28 },
-      { name: "GitHub", icon: "github", size: 28 }
+      { name: "Docker", icon: "docker", size: 25 },
+      { name: "Nginx", icon: "nginx", size: 24 },
+      { name: "Linux", icon: "linux", size: 24 },
+      { name: "GitHub", icon: "github", size: 22 }
     ]
   },
   also: {
     heading: "Also",
     items: [
-      { name: "Java", icon: "java", size: 29 },
-      { name: "Python", icon: "python", size: 28 },
-      { name: "MongoDB", icon: "mongodb", size: 29 }
+      { name: "Java", icon: "java", size: 25 },
+      { name: "Python", icon: "python", size: 24 },
+      { name: "MongoDB", icon: "mongodb", size: 25 }
     ]
   },
   ai: {
     heading: "AI",
     items: [
-      { name: "ChatGPT", icon: "chatgpt", size: 28 },
-      { name: "Claude", icon: "claude", size: 29 },
-      { name: "Gemini", icon: "gemini", size: 28 },
-      { name: "Kimi", icon: "kimi", size: 28 },
-      { name: "Qwen", icon: "qwen", size: 28 }
+      { name: "ChatGPT", icon: "chatgpt", size: 24 },
+      { name: "Claude", icon: "claude", size: 25 },
+      { name: "Gemini", icon: "gemini", size: 24 },
+      { name: "Kimi", icon: "kimi", size: 22 },
+      { name: "Qwen", icon: "qwen", size: 24 }
     ]
   }
 };
 
 /**
  * Generates the GitHub Markdown representation for README.md
- * Spacious borderless category layout: Build, Ship, Also, AI.
- * Each item is wrapped in <nobr> to prevent detached icon/text wrapping in mobile views.
- * Items flow across the row with generous non-breaking spaces on PC.
+ * Uses clean 2-column tables per category with atomic icon + label cells (<td width="50%">).
+ * Category headings use <p><strong>Category</strong></p> to prevent GitHub from generating anchor link icons (🔗).
  */
 function renderMarkdown(data = toolkitData) {
   const sections = [];
@@ -55,14 +54,29 @@ function renderMarkdown(data = toolkitData) {
 
   const groups = [data.build, data.ship, data.also, data.ai];
   for (const group of groups) {
-    sections.push(`### ${group.heading}\n`);
-    sections.push('<p align="left">');
-    const itemStrings = group.items.map((item) => {
-      const size = item.size || 28;
-      return `  <nobr><img src="assets/icons/${item.icon}.svg" alt="" width="${size}" height="${size}" valign="middle" />&nbsp;&nbsp;${item.name}</nobr>`;
-    });
-    sections.push(itemStrings.join("&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;\n"));
-    sections.push("</p>\n");
+    sections.push(`<p><strong>${group.heading}</strong></p>\n`);
+    sections.push('<table width="100%">');
+
+    for (let i = 0; i < group.items.length; i += 2) {
+      const itemLeft = group.items[i];
+      const itemRight = group.items[i + 1];
+
+      const leftSize = itemLeft.size || 24;
+      const leftCell = `    <td width="50%"><img src="assets/icons/${itemLeft.icon}.svg" alt="" width="${leftSize}" height="${leftSize}" valign="middle" />&nbsp;&nbsp;${itemLeft.name}</td>`;
+
+      let rightCell = '    <td width="50%">&nbsp;</td>';
+      if (itemRight) {
+        const rightSize = itemRight.size || 24;
+        rightCell = `    <td width="50%"><img src="assets/icons/${itemRight.icon}.svg" alt="" width="${rightSize}" height="${rightSize}" valign="middle" />&nbsp;&nbsp;${itemRight.name}</td>`;
+      }
+
+      sections.push("  <tr>");
+      sections.push(leftCell);
+      sections.push(rightCell);
+      sections.push("  </tr>");
+    }
+
+    sections.push("</table>\n");
   }
 
   return sections.join("\n").trim();
@@ -82,7 +96,7 @@ function renderHtml(data = toolkitData) {
     sections.push('    <div class="toolkit-list">');
 
     for (const item of group.items) {
-      const size = item.size || 28;
+      const size = item.size || 24;
       sections.push('      <div class="toolkit-item">');
       sections.push(`        <span class="toolkit-icon icon--${size}"><img src="assets/icons/${item.icon}.svg" alt="" aria-hidden="true" /></span>`);
       sections.push(`        <span>${item.name}</span>`);
