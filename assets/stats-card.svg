@@ -20,14 +20,14 @@
   <g transform="translate(25, 87)">
     <path class="icon" d="M10.5 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm.844 5.922A6.001 6.001 0 0 0 14 5.5a6 6 0 1 0-12 0 6.001 6.001 0 0 0 2.656 5.922A6 6 0 0 0 8 16a6 6 0 0 0 3.344-4.578ZM11 5.5a3 3 0 1 0-6 0 3 3 0 0 0 6 0Zm-3 9A4.5 4.5 0 0 1 3.535 9.8 4.5 4.5 0 0 1 8 5a4.5 4.5 0 0 1 4.465 4.8 4.5 4.5 0 0 1-4.465 4.7Z" />
     <text x="24" y="11" class="text">Total Commits</text>
-    <text x="330" y="11" class="text" text-anchor="end" font-weight="600">1180</text>
+    <text x="330" y="11" class="text" text-anchor="end" font-weight="600">1425</text>
   </g>
   
   <!-- PRs Merged -->
   <g transform="translate(25, 116)">
     <path class="icon" d="M5.45 5.154A4.25 4.25 0 0 0 9.25 7.5h1.378a2.251 2.251 0 1 1 0 1.5H9.25A5.75 5.75 0 0 1 4 3.712v-.962a.75.75 0 0 1 1.45-.25v2.654ZM12 9.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-8.75 3a2.25 2.25 0 1 1 3 2.122v1.878a2.25 2.25 0 1 1-1.5 0V14.37A2.25 2.25 0 0 1 3.25 12.25Zm1.5-.75a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 6a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Z" />
     <text x="24" y="11" class="text">PRs Merged</text>
-    <text x="330" y="11" class="text" text-anchor="end" font-weight="600">22</text>
+    <text x="330" y="11" class="text" text-anchor="end" font-weight="600">1</text>
   </g>
 
   <!-- Issues Closed -->
