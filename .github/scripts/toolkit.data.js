@@ -46,6 +46,7 @@ const toolkitData = {
 /**
  * Generates the GitHub Markdown representation for README.md
  * Two-column category layout: Build & Ship side by side, Also & AI side by side below.
+ * Uses <nobr> and <br> per item to prevent detached icon/text wrapping in mobile views.
  */
 function renderMarkdown(data = toolkitData) {
   const sections = [];
@@ -53,15 +54,13 @@ function renderMarkdown(data = toolkitData) {
 
   const renderGroupCell = (group) => {
     const lines = [];
-    lines.push(`<h3>${group.heading}</h3>\n`);
+    lines.push(`### ${group.heading}\n`);
     lines.push('<p align="left">');
-    const itemSpans = group.items.map((item, idx) => {
-      const isLast = idx === group.items.length - 1;
-      const marginStyle = isLast ? "margin-bottom:8px;" : "margin-right:20px;margin-bottom:8px;";
+    const itemLines = group.items.map((item) => {
       const size = item.size || 28;
-      return `  <span style="display:inline-flex;align-items:center;${marginStyle}">\n    <img src="assets/icons/${item.icon}.svg" alt="" width="${size}" height="${size}" valign="middle" />&nbsp;&nbsp;${item.name}\n  </span>`;
+      return `  <nobr><img src="assets/icons/${item.icon}.svg" alt="" width="${size}" height="${size}" valign="middle" />&nbsp;&nbsp;${item.name}</nobr>`;
     });
-    lines.push(itemSpans.join("&nbsp;&nbsp;&nbsp;&nbsp;\n"));
+    lines.push(itemLines.join("<br>\n"));
     lines.push("</p>");
     return lines.join("\n");
   };
