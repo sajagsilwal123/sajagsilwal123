@@ -156,10 +156,12 @@ Active experimentation around how AI can improve software development, engineeri
 
 <img src="assets/stats-card.svg" alt="GitHub Stats" />
 &nbsp;
-<img src="assets/languages-card.svg" alt="Most used languages" />
+<img src="assets/insights-card.svg" alt="Activity Insights" />
 
 <br>
 <br>
+
+<img src="assets/languages-bar.svg" alt="Most used languages" />
 
 <img src="assets/heatmap.svg" alt="Contribution Activity Heatmap" />
 

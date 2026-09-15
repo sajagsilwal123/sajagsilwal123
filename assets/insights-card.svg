@@ -1,0 +1,53 @@
+<svg width="380" height="235" viewBox="0 0 380 235" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: 600 15px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; fill: #e6edf3; }
+    .text { font: 400 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; fill: #e6edf3; }
+    .icon { fill: #8b949e; }
+    rect.bg { fill: #0d1117; stroke: #30363d; stroke-width: 1; rx: 6; }
+  </style>
+  <rect class="bg" width="378" height="233" x="1" y="1" />
+  
+  <text x="25" y="32" class="title">Activity Insights</text>
+  
+  <!-- Most active month -->
+  <g transform="translate(25, 58)">
+    <path class="icon" d="M1.5 2.75a.25.25 0 0 1 .25-.25h12.5a.25.25 0 0 1 .25.25v1.75H1.5V2.75ZM1.5 6h13v7.25a.25.25 0 0 1-.25.25H1.75a.25.25 0 0 1-.25-.25V6ZM0 2.75C0 1.784.784 1 1.75 1h12.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25V2.75Z" />
+    <text x="24" y="11" class="text">Most active month</text>
+    <text x="330" y="11" class="text" text-anchor="end" font-weight="600">Jun 2026</text>
+  </g>
+  
+  <!-- Most active weekday -->
+  <g transform="translate(25, 87)">
+    <path class="icon" d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm6-3.25v3.5h3.25a.75.75 0 0 1 0 1.5H6.75a.75.75 0 0 1-.75-.75V4.75a.75.75 0 0 1 1.5 0Z" />
+    <text x="24" y="11" class="text">Most active weekday</text>
+    <text x="330" y="11" class="text" text-anchor="end" font-weight="600">Sunday</text>
+  </g>
+  
+  <!-- Most active repo -->
+  <g transform="translate(25, 116)">
+    <path class="icon" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5v-9Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8V1.5Z" />
+    <text x="24" y="11" class="text">Most active repo</text>
+    <text x="330" y="11" class="text" text-anchor="end" font-weight="600">BasukiMS</text>
+  </g>
+
+  <!-- Commits this year -->
+  <g transform="translate(25, 145)">
+    <path class="icon" d="M2.5 1.75a.75.75 0 0 0-1.5 0v3a.75.75 0 0 0 1.5 0v-3Zm11 0a.75.75 0 0 0-1.5 0v3a.75.75 0 0 0 1.5 0v-3Zm-9 7a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Zm0 3a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75Z" />
+    <text x="24" y="11" class="text">Commits this year</text>
+    <text x="330" y="11" class="text" text-anchor="end" font-weight="600">320</text>
+  </g>
+
+  <!-- Avg commits / active day -->
+  <g transform="translate(25, 174)">
+    <path class="icon" d="M9.504.43a.75.75 0 0 1 .453.694l-.08 4.38 3.376-2.532a.75.75 0 0 1 1.157.776l-2.73 7.822 3.167-.792a.75.75 0 0 1 .79.1.75.75 0 0 1 .163.856l-5.5 11.5a.75.75 0 0 1-1.394-.534l.874-5.244-3.37 1.123a.75.75 0 0 1-.954-.928L8.14 9.176l-2.98.745a.75.75 0 0 1-.89-.475.75.75 0 0 1 .13-.806l5-8a.75.75 0 0 1 .104-.21Z" />
+    <text x="24" y="11" class="text">Avg commits / active day</text>
+    <text x="330" y="11" class="text" text-anchor="end" font-weight="600">8.1</text>
+  </g>
+
+  <!-- Consistency -->
+  <g transform="translate(25, 203)">
+    <path class="icon" d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm8.78-1.28a.75.75 0 0 0-1.06-1.06L6.75 8.19 5.53 6.97a.75.75 0 0 0-1.06 1.06l1.75 1.75a.75.75 0 0 0 1.06 0l3-3Z" />
+    <text x="24" y="11" class="text">Contribution consistency</text>
+    <text x="330" y="11" class="text" text-anchor="end" font-weight="600">92% of weeks</text>
+  </g>
+</svg>
