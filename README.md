@@ -120,6 +120,28 @@ Active experimentation around how AI can improve software development, engineeri
   </span>
 </p>
 
+<br>
+
+### AI
+
+<p align="left">
+  <span style="display:inline-flex;align-items:center;margin-right:28px;">
+    <img src="assets/icons/chatgpt.svg" alt="" width="20" height="20" valign="middle" />&nbsp;&nbsp;ChatGPT
+  </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <span style="display:inline-flex;align-items:center;margin-right:28px;">
+    <img src="assets/icons/claude.svg" alt="" width="20" height="20" valign="middle" />&nbsp;&nbsp;Claude
+  </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <span style="display:inline-flex;align-items:center;margin-right:28px;">
+    <img src="assets/icons/gemini.svg" alt="" width="20" height="20" valign="middle" />&nbsp;&nbsp;Gemini
+  </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <span style="display:inline-flex;align-items:center;margin-right:28px;">
+    <img src="assets/icons/kimi.svg" alt="" width="20" height="20" valign="middle" />&nbsp;&nbsp;Kimi
+  </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <span style="display:inline-flex;align-items:center;">
+    <img src="assets/icons/qwen.svg" alt="" width="20" height="20" valign="middle" />&nbsp;&nbsp;Qwen
+  </span>
+</p>
+
 ---
 
 ## 04 / GitHub
